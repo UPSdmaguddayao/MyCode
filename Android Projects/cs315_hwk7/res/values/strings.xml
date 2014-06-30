@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">aMAZEing</string>
+    <string name="action_settings">Settings</string>
+	<string name="Look_Left">Look Left</string>
+	<string name="Look_Right">Look Right</string>
+	<string name="Move_Up">Move Up</string>
+	<string name="Restart">Restart</string>
+	<string name="Overhead">ViewChange</string>
+</resources>

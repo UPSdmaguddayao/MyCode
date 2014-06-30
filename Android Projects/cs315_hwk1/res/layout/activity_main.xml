@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cs315.dmaguddayao.hwk1.DrawingView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="100"
+            />
+   <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+            <Button
+        android:id="@+id/destroy"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text="@string/destroy" 
+        android:onClick="buttonDestroy"/>
+        
+        <TextView
+            android:id="@+id/colorText"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.53"
+            android:text="@string/color" />
+
+        <RadioButton
+            android:id="@+id/whiteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/white" 
+            android:onClick="onColorButtonClicked"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/blackColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/black" 
+			android:onClick="onColorButtonClicked"
+			android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/BCButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BC" 
+        	android:onClick="backgroundUpdate"/>
+
+    </RadioGroup>
+
+    
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text" />
+
+        <RadioButton
+            android:id="@+id/smallSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small" 
+            android:onClick="onSizeButtonClicked"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/midSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mid" 
+			android:onClick="onSizeButtonClicked"
+			android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/bigSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/large"
+            android:onClick="onSizeButtonClicked"
+            android:layout_weight="1" />
+
+
+
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country" />
+
+        <RadioButton
+            android:id="@+id/radioJapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/japan" 
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radioMEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mexican" 
+			android:onClick="onRadioButtonClicked"
+			android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radioDIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disney"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1" />
+
+
+
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/countryChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_txt"
+			android:onClick="buttonPress"
+            />
+
+</LinearLayout>
