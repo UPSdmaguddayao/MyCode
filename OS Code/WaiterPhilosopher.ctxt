@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=n\ nr\ l\ r
+comment0.target=WaiterPhilosopher(int,\ int,\ Chopstick,\ Chopstick)
+comment0.text=\n\ Have\ a\ semaphore\ initialized\ to\ (n-1),\ and\ all\ philosophers\ must\ wait\ on\ it\ in\ order\ to\ pick\ up\ chopsticks.\n\ In\ the\ metaphor,\ this\ semaphore\ is\ a\ \u201Cwaiter\u201D\ who\ can\ control\ who\ eats.\n\ Reasoning\ is\ similar\ to\ the\ above\:\ some\ philosophers\ have\ exclusive\ chopsticks.\n
+comment1.params=
+comment1.target=void\ getChopsticks()
+numComments=2

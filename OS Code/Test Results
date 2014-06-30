@@ -1,0 +1,57 @@
+FIFO
+
+Process 2has a total wait time of 47ms and a total turnaround time of 85ms
+Process 0has a total wait time of 28ms and a total turnaround time of 91ms
+Process 1has a total wait time of 40ms and a total turnaround time of 98ms
+Process 3has a total wait time of 30ms and a total turnaround time of 115ms
+
+
+ShortestJobFirst
+
+Process 2has a total wait time of 17ms and a total turnaround time of 55ms
+Process 1has a total wait time of 30ms and a total turnaround time of 88ms
+Process 0has a total wait time of 35ms and a total turnaround time of 98ms
+Process 3has a total wait time of 38ms and a total turnaround time of 123ms
+
+Preemptive SJF
+
+Process 2has a total wait time of 14ms and a total turnaround time of 52ms
+Process 1has a total wait time of 20ms and a total turnaround time of 78ms
+Process 0has a total wait time of 35ms and a total turnaround time of 98ms
+Process 3has a total wait time of 43ms and a total turnaround time of 128ms
+
+
+RR
+Process 2has a total wait time of 37ms and a total turnaround time of 75ms
+Process 1has a total wait time of 30ms and a total turnaround time of 88ms
+Process 0has a total wait time of 37ms and a total turnaround time of 101ms
+Process 3has a total wait time of 36ms and a total turnaround time of 121ms
+
+
+FIFO
+
+Process 2has a total wait time of 142ms and a total turnaround time of 180ms
+Process 0has a total wait time of 28ms and a total turnaround time of 186ms
+Process 1has a total wait time of 135ms and a total turnaround time of 193ms
+Process 3has a total wait time of 125ms and a total turnaround time of 210ms
+
+SJF
+
+Process 2has a total wait time of 112ms and a total turnaround time of 150ms
+Process 1has a total wait time of 125ms and a total turnaround time of 183ms
+Process 0has a total wait time of 35ms and a total turnaround time of 193ms
+Process 3has a total wait time of 133ms and a total turnaround time of 218ms
+
+PSJF
+
+Process 2has a total wait time of 11ms and a total turnaround time of 49ms
+Process 1has a total wait time of 6ms and a total turnaround time of 64ms
+Process 3has a total wait time of 29ms and a total turnaround time of 113ms
+Process 0has a total wait time of 68ms and a total turnaround time of 228ms
+
+RR
+
+Process 2has a total wait time of 50ms and a total turnaround time of 88ms
+Process 1has a total wait time of 43ms and a total turnaround time of 101ms
+Process 3has a total wait time of 87ms and a total turnaround time of 171ms
+Process 0has a total wait time of 63ms and a total turnaround time of 223ms

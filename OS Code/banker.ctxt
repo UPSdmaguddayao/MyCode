@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=s
+comment1.target=boolean\ isInt(java.lang.String)
+comment1.text=\n\ Helper\ method\ for\ finding\ if\ something\ a\ string\ is\ an\ int.\ \ Only\ used\ for\ if\ there\ are\ more\ than\ 9\ processes.\ \ Just\ in\ case\n
+comment2.params=type\ processNumber\ resource\ enterQueue\ cQueue\ pQueue
+comment2.target=void\ action(java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ java.util.LinkedList,\ java.util.LinkedList)
+comment2.text=\n\ Helper\ method\ for\ executing\ different\ actions.\ \ Could've\ not\ been\ used,\ but\ avoids\ the\ code\ above\ from\ looking\ too\ clunky\ due\ to\ three\ different\ methods\n\ that\ can\ occur\n
+comment3.params=resource
+comment3.target=int\ parseResource(java.lang.String)
+comment3.text=\n\ Helper\ method\ for\ parsing\ the\ text\ on\ which\ resource\ to\ use/change\n
+comment4.params=
+comment4.target=boolean\ isSafe()
+comment4.text=\n\ Helper\ method\ for\ finding\ if\ the\ process\ is\ safe\n\ If\ it\ returns\ false,\ the\ method\ will\ end\ up\ stalled\n\ Continually\ check\ if\ a)\ we\ have\ the\ resource\ to\ do\ it\ and\n\ b)\ if\ giving\ the\ resource\ won't\ make\ a\ deadlock\ (meaning\ something\ is\ able\ terminate\ and\ able\ to\ return\ enough\ resources\ so\ other\ things\ can\ terminate\ too\n
+comment5.params=
+comment5.target=void\ queueExecution()
+comment5.text=\n\ When\ we\ terminate,\ we\ go\ through\ the\ queue\ and\ execute\n\ We\ use\ a\ temporary\ Queue\ so\ we\ can\ switch\ things\ up\n
+numComments=6

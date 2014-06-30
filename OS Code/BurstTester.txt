@@ -1,0 +1,7 @@
+CPUAvailable: 1
+ProcessNumber ArrivalTime CPUBurst IOBurst CPUBurst IOBurst each seperated by a tab (All in ms).  Just after Process Number and Arrival Time, Alternate which one is CPU and which is I/O
+
+0	0	5	10	12	20	10	8
+1	2	10	20	6	10	5	10
+2	5	3	6	10	15	2	5
+3	7	7	5	20	40	5	10
