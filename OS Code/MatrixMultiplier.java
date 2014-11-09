@@ -24,7 +24,8 @@ class MatrixMultiplier
     private static squareMatrix extraMatrix2; //this one always stays the same.
     
     private static int multipliesDone; //keeps tracks of how many times something has been multiplied.  Useful for looping
-     public static void main (String[] args){
+    public static void main (String[] args)
+    {
         try
         {
             BufferedReader in = new BufferedReader
