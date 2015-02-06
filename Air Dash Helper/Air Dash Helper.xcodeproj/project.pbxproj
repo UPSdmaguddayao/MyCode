@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095D4C901A80C78F0000C5A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C8F1A80C78F0000C5A9 /* main.m */; };
+		095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C921A80C78F0000C5A9 /* AppDelegate.m */; };
+		095D4C961A80C78F0000C5A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C951A80C78F0000C5A9 /* ViewController.m */; };
+		095D4C991A80C78F0000C5A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095D4C971A80C78F0000C5A9 /* Main.storyboard */; };
+		095D4C9B1A80C78F0000C5A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095D4C9A1A80C78F0000C5A9 /* Images.xcassets */; };
+		095D4C9E1A80C78F0000C5A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095D4C9C1A80C78F0000C5A9 /* LaunchScreen.xib */; };
+		095D4CAA1A80C78F0000C5A9 /* Air_Dash_HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4CA91A80C78F0000C5A9 /* Air_Dash_HelperTests.m */; };
+		098FD8121A8496EF003CCE0F /* CharacterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */; };
+		098FD8151A849719003CCE0F /* MoveListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8141A849719003CCE0F /* MoveListTableViewController.m */; };
+		098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */; };
+		098FD81E1A84A352003CCE0F /* RevolverActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */; };
+		098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		095D4CA41A80C78F0000C5A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095D4C821A80C78F0000C5A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095D4C891A80C78F0000C5A9;
+			remoteInfo = "Air Dash Helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095D4C8A1A80C78F0000C5A9 /* Air Dash Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Dash Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		095D4C8E1A80C78F0000C5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095D4C8F1A80C78F0000C5A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		095D4C911A80C78F0000C5A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		095D4C921A80C78F0000C5A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		095D4C941A80C78F0000C5A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		095D4C951A80C78F0000C5A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		095D4C981A80C78F0000C5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		095D4C9A1A80C78F0000C5A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		095D4C9D1A80C78F0000C5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		095D4CA31A80C78F0000C5A9 /* Air Dash HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air Dash HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		095D4CA81A80C78F0000C5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095D4CA91A80C78F0000C5A9 /* Air_Dash_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Air_Dash_HelperTests.m; sourceTree = "<group>"; };
+		098FD8101A8496EF003CCE0F /* CharacterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewController.h; sourceTree = "<group>"; };
+		098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewController.m; sourceTree = "<group>"; };
+		098FD8131A849719003CCE0F /* MoveListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveListTableViewController.h; sourceTree = "<group>"; };
+		098FD8141A849719003CCE0F /* MoveListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveListTableViewController.m; sourceTree = "<group>"; };
+		098FD8161A849A6D003CCE0F /* MainMenuCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCollectionViewController.h; sourceTree = "<group>"; };
+		098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuCollectionViewController.m; sourceTree = "<group>"; };
+		098FD81C1A84A352003CCE0F /* RevolverActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevolverActionTableViewController.h; sourceTree = "<group>"; };
+		098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevolverActionTableViewController.m; sourceTree = "<group>"; };
+		098FD81F1A84A4ED003CCE0F /* CharacterFrameDataTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFrameDataTabController.h; sourceTree = "<group>"; };
+		098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFrameDataTabController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095D4C871A80C78F0000C5A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095D4CA01A80C78F0000C5A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095D4C811A80C78F0000C5A9 = {
+			isa = PBXGroup;
+			children = (
+				095D4C8C1A80C78F0000C5A9 /* Air Dash Helper */,
+				095D4CA61A80C78F0000C5A9 /* Air Dash HelperTests */,
+				095D4C8B1A80C78F0000C5A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		095D4C8B1A80C78F0000C5A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				095D4C8A1A80C78F0000C5A9 /* Air Dash Helper.app */,
+				095D4CA31A80C78F0000C5A9 /* Air Dash HelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095D4C8C1A80C78F0000C5A9 /* Air Dash Helper */ = {
+			isa = PBXGroup;
+			children = (
+				095D4C911A80C78F0000C5A9 /* AppDelegate.h */,
+				095D4C921A80C78F0000C5A9 /* AppDelegate.m */,
+				095D4C941A80C78F0000C5A9 /* ViewController.h */,
+				095D4C951A80C78F0000C5A9 /* ViewController.m */,
+				095D4C971A80C78F0000C5A9 /* Main.storyboard */,
+				098FD81F1A84A4ED003CCE0F /* CharacterFrameDataTabController.h */,
+				098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */,
+				098FD81C1A84A352003CCE0F /* RevolverActionTableViewController.h */,
+				098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */,
+				098FD8161A849A6D003CCE0F /* MainMenuCollectionViewController.h */,
+				098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */,
+				098FD8101A8496EF003CCE0F /* CharacterTableViewController.h */,
+				098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */,
+				098FD8131A849719003CCE0F /* MoveListTableViewController.h */,
+				098FD8141A849719003CCE0F /* MoveListTableViewController.m */,
+				095D4C9A1A80C78F0000C5A9 /* Images.xcassets */,
+				095D4C9C1A80C78F0000C5A9 /* LaunchScreen.xib */,
+				095D4C8D1A80C78F0000C5A9 /* Supporting Files */,
+			);
+			path = "Air Dash Helper";
+			sourceTree = "<group>";
+		};
+		095D4C8D1A80C78F0000C5A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				095D4C8E1A80C78F0000C5A9 /* Info.plist */,
+				095D4C8F1A80C78F0000C5A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		095D4CA61A80C78F0000C5A9 /* Air Dash HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				095D4CA91A80C78F0000C5A9 /* Air_Dash_HelperTests.m */,
+				095D4CA71A80C78F0000C5A9 /* Supporting Files */,
+			);
+			path = "Air Dash HelperTests";
+			sourceTree = "<group>";
+		};
+		095D4CA71A80C78F0000C5A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				095D4CA81A80C78F0000C5A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		095D4C891A80C78F0000C5A9 /* Air Dash Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095D4CAD1A80C78F0000C5A9 /* Build configuration list for PBXNativeTarget "Air Dash Helper" */;
+			buildPhases = (
+				095D4C861A80C78F0000C5A9 /* Sources */,
+				095D4C871A80C78F0000C5A9 /* Frameworks */,
+				095D4C881A80C78F0000C5A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Dash Helper";
+			productName = "Air Dash Helper";
+			productReference = 095D4C8A1A80C78F0000C5A9 /* Air Dash Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		095D4CA21A80C78F0000C5A9 /* Air Dash HelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095D4CB01A80C78F0000C5A9 /* Build configuration list for PBXNativeTarget "Air Dash HelperTests" */;
+			buildPhases = (
+				095D4C9F1A80C78F0000C5A9 /* Sources */,
+				095D4CA01A80C78F0000C5A9 /* Frameworks */,
+				095D4CA11A80C78F0000C5A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095D4CA51A80C78F0000C5A9 /* PBXTargetDependency */,
+			);
+			name = "Air Dash HelperTests";
+			productName = "Air Dash HelperTests";
+			productReference = 095D4CA31A80C78F0000C5A9 /* Air Dash HelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		095D4C821A80C78F0000C5A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "DJ Maguddayao";
+				TargetAttributes = {
+					095D4C891A80C78F0000C5A9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					095D4CA21A80C78F0000C5A9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 095D4C891A80C78F0000C5A9;
+					};
+				};
+			};
+			buildConfigurationList = 095D4C851A80C78F0000C5A9 /* Build configuration list for PBXProject "Air Dash Helper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 095D4C811A80C78F0000C5A9;
+			productRefGroup = 095D4C8B1A80C78F0000C5A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				095D4C891A80C78F0000C5A9 /* Air Dash Helper */,
+				095D4CA21A80C78F0000C5A9 /* Air Dash HelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		095D4C881A80C78F0000C5A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095D4C991A80C78F0000C5A9 /* Main.storyboard in Resources */,
+				095D4C9E1A80C78F0000C5A9 /* LaunchScreen.xib in Resources */,
+				095D4C9B1A80C78F0000C5A9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095D4CA11A80C78F0000C5A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		095D4C861A80C78F0000C5A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098FD81E1A84A352003CCE0F /* RevolverActionTableViewController.m in Sources */,
+				095D4C961A80C78F0000C5A9 /* ViewController.m in Sources */,
+				098FD8121A8496EF003CCE0F /* CharacterTableViewController.m in Sources */,
+				098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */,
+				095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */,
+				095D4C901A80C78F0000C5A9 /* main.m in Sources */,
+				098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */,
+				098FD8151A849719003CCE0F /* MoveListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095D4C9F1A80C78F0000C5A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095D4CAA1A80C78F0000C5A9 /* Air_Dash_HelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		095D4CA51A80C78F0000C5A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095D4C891A80C78F0000C5A9 /* Air Dash Helper */;
+			targetProxy = 095D4CA41A80C78F0000C5A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		095D4C971A80C78F0000C5A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095D4C981A80C78F0000C5A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		095D4C9C1A80C78F0000C5A9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095D4C9D1A80C78F0000C5A9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		095D4CAB1A80C78F0000C5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		095D4CAC1A80C78F0000C5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		095D4CAE1A80C78F0000C5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Air Dash Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		095D4CAF1A80C78F0000C5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Air Dash Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		095D4CB11A80C78F0000C5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Air Dash HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Dash Helper.app/Air Dash Helper";
+			};
+			name = Debug;
+		};
+		095D4CB21A80C78F0000C5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Air Dash HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Dash Helper.app/Air Dash Helper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095D4C851A80C78F0000C5A9 /* Build configuration list for PBXProject "Air Dash Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095D4CAB1A80C78F0000C5A9 /* Debug */,
+				095D4CAC1A80C78F0000C5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095D4CAD1A80C78F0000C5A9 /* Build configuration list for PBXNativeTarget "Air Dash Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095D4CAE1A80C78F0000C5A9 /* Debug */,
+				095D4CAF1A80C78F0000C5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095D4CB01A80C78F0000C5A9 /* Build configuration list for PBXNativeTarget "Air Dash HelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095D4CB11A80C78F0000C5A9 /* Debug */,
+				095D4CB21A80C78F0000C5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 095D4C821A80C78F0000C5A9 /* Project object */;
+}
