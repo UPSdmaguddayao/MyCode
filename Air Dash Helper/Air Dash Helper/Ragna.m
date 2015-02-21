@@ -2,7 +2,6 @@
 //  Ragna.m
 //  Air Dash Helper
 //
-//  Stores all the data for Ragna the Bloodedge
 //  Created by DJ Maguddayao on 2/14/15.
 //  Copyright (c) 2015 DJ Maguddayao. All rights reserved.
 //
@@ -11,10 +10,6 @@
 
 @implementation Ragna
 
--(void)load{
-    [self loadFrameData];
-    [self loadRevolverAction];
-}
 -(void)loadFrameData{
     
     FrameDataInstance *nA = [[FrameDataInstance alloc] init];
@@ -45,28 +40,20 @@
     nB.attribute = @"B";
     nB.block = @"HL";
     
-    self.frameData = [NSArray arrayWithObjects:nA,nB, nil]; //work with this for now.  Figure out how to make it more efficient at loading later.
+    self.ragnaFrameData = [NSArray arrayWithObjects:nA,nB, nil]; //work with this for now.  Figure out how to make it more efficient at loading later.
     
 }
 
 -(void)loadRevolverAction{
-    self.revolverAction = [NSDictionary dictionaryWithObjectsAndKeys:
+    self.ragnaDRevolverAction = [NSDictionary dictionaryWithObjectsAndKeys:
     [NSArray arrayWithObjects:@"5A", @"2A", @"6A", @"5B", @"2B", @"6B", @"5C", @"2C", @"6C",@"3C",@"5D", @"2D",@"6D",@"Throw",@"Jump", @"Special", @"Overdrive", nil], @"5A",
                                  nil];
     
+    //method for turning into a string
+    /*
+     NSString * result = [[array valueForKey:@"description"] componentsJoinedByString:@", "];
+     */
     
-     NSString * result = [[self.revolverAction valueForKey:@"description"] componentsJoinedByString:@", "];
-    NSLog(@"The revolver action of the move %@",result); //use this for testing how it displays
-    
-    
-}
-
--(NSArray*)returnFrameData{
-    return self.frameData;
-}
-
--(NSDictionary*)returnRevolverAction{
-    return self.revolverAction;
 }
 
 @end

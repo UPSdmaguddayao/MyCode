@@ -7,7 +7,7 @@
 //
 
 #import "CharacterTableViewController.h"
-#import "Character.h"
+#import "Ragna.h"
 
 @interface CharacterTableViewController ()
 

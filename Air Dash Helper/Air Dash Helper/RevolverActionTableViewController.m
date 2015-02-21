@@ -22,9 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    #warning Figure out how to keep it that a character instance is passed to both this and MoveListTableViewController
-   /* self.cha = (Character*)[ [Ragna alloc] init]; //test with Ragna first.  Then finetune this for other characterss
-   // [self.cha loadFrameData];*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,13 +34,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.moveList.count;
+    return 0;
 }
 
 /*

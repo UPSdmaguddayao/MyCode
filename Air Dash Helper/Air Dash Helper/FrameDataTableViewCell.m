@@ -4,11 +4,9 @@
 //
 //  Created by DJ Maguddayao on 2/19/15.
 //  Copyright (c) 2015 DJ Maguddayao. All rights reserved.
-//  Helps display frame data shown on the MoveListTableViewController.  Displays multiple columns
-//Idea: follow this http://www.raywenderlich.com/4680/how-to-make-an-interface-with-horizontal-tables-like-the-pulse-news-app-part-1
+//  Helps display frame data shown on the MoveListTableViewController
 //
 
-#warning Implement the link's version on how to deal with tables
 #import "FrameDataTableViewCell.h"
 
 @implementation FrameDataTableViewCell
