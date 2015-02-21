@@ -8,6 +8,7 @@
 
 #import "MoveListTableViewController.h"
 
+
 @interface MoveListTableViewController ()
 
 @end
@@ -17,11 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+#warning Figure out how to keep it that a character instance is passed to both this and MoveListTableViewController.  Figure it out with how segues to the CharacterFrameDataTabController works
+#warning "Not using other characters yet"
+   /* self.cha = (Character*)[ [Ragna alloc] init]; //test with Ragna first.  Then finetune this for other characterss
+    [self.cha loadFrameData];
+    self.characterFrameData = self.cha.frameData;*/
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // create a background image for the cell:
+    /*
+    UIImageView *hdr = [[[UIImageView alloc] initWithFrame:CGRectZero] autorelease];
+    [hdr setBackgroundColor:[UIColor clearColor]];
+    [hdr setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hdr" ofType:@"png"]]];
+    [self setHeaderView:hdr];
+    [hdr release];
+    
+    UIImageView *footer = [[[UIImageView alloc] initWithFrame:CGRectZero] autorelease];
+    [footer setBackgroundColor:[UIColor clearColor]];
+    [footer setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"footer" ofType:@"png"]]];
+    [self setFooterView:footer];
+    [footer release]; */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,26 +52,31 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 10;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.characterFrameData.count;
 }
 
+#warning Make this have columns and stuff
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FrameDataCell" forIndexPath:indexPath];
+    
+    if( cell == nil ){
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FrameDataCell"];
+    }
     
     // Configure the cell...
+    //grabbed item from the array
+    FrameDataInstance* fdi = [self.characterFrameData objectAtIndex:indexPath];
+        cell.textLabel.text = (NSString*)[players valueForKey:@"PlayerFullName"]
     
     return cell;
-}
-*/
+}*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -66,31 +86,6 @@
 }
 */
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

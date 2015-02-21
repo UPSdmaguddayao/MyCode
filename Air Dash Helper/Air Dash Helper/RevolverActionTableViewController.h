@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
+#import "Ragna.m"
 
 @interface RevolverActionTableViewController : UITableViewController
+
+#warning Find out which of these works better
+@property NSArray *listOfMoves;
+@property NSDictionary *moveList;
+@property Character *cha;
 
 @end

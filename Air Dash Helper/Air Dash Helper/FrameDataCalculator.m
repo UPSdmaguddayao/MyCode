@@ -24,13 +24,15 @@
     //while moveList isn't empty, grab startup, active, recovery, and blockstun
         //while startup != 0, add S to attackFrameData if block = 0 add blank else block-- add block
     
-        //check the cancels of each move.  If the move after this one is in it, make active frame 1 and recovery zero.  Else, put it at the end of recovery (loop)
+        //check the cancels of each move.  If the move after this one is in it, make active frame 1 and recovery zero.  This will be utilizing grabbing from a . dictionaryElse, put it at the end of recovery (loop)
+        //example: if character_name.revolveraction[@"5A"].contains(nextMove)
     
         //add A to attackFrameData.  Active = active-- if block = 0 add blank else block--;  block = blockdata <--this ensures that the first active frame is read and calculates blockstun after it hits
         //while active !=0 add A to attackFrameData.  active--; if block = 0 add blank else block--;
         //while recovery !=0 add R to recovery.  r--; if block = 0 add blank else block--;
 }
 
+#warning Make this return something
 -(void)returnDisplay //make this a return, but don't know how to create the display yet
 {
     

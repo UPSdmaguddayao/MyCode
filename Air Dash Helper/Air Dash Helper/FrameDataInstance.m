@@ -10,4 +10,29 @@
 
 @implementation FrameDataInstance
 
+#warning Need to fill this out
+-(NSString*)returnStartUp
+{
+    return @"SU";
+}
+-(NSString*)returnActive
+{
+    return @"A";
+}
+-(NSString*)returnRecovery
+{
+    return @"R";
+}
+-(NSString*)returnBlockStun
+{
+    return @"BS";
+}
+-(NSString*)returnInvuln
+{
+    return @"Invul";
+}
+-(NSString*)returnFrameAdvantage
+{
+    return @"FA";
+}
 @end
