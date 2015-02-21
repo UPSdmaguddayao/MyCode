@@ -12,7 +12,8 @@
 @interface Ragna : NSObject
 
 @property NSArray* ragnaFrameData;
-@property NSArray* ragnaRevolverAction;
+//@property NSArray* ragnaRevolverAction;
+@property NSDictionary* ragnaDRevolverAction;
 
 -(void)loadFrameData;
 -(void)loadRevolverAction;

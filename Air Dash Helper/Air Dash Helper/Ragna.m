@@ -45,7 +45,15 @@
 }
 
 -(void)loadRevolverAction{
-
+    self.ragnaDRevolverAction = [NSDictionary dictionaryWithObjectsAndKeys:
+    [NSArray arrayWithObjects:@"5A", @"2A", @"6A", @"5B", @"2B", @"6B", @"5C", @"2C", @"6C",@"3C",@"5D", @"2D",@"6D",@"Throw",@"Jump", @"Special", @"Overdrive", nil], @"5A",
+                                 nil];
+    
+    //method for turning into a string
+    /*
+     NSString * result = [[array valueForKey:@"description"] componentsJoinedByString:@", "];
+     */
+    
 }
 
 @end

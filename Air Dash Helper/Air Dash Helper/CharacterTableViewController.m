@@ -7,8 +7,11 @@
 //
 
 #import "CharacterTableViewController.h"
+#import "Ragna.h"
 
 @interface CharacterTableViewController ()
+
+@property NSMutableArray *listOfCharacters;
 
 @end
 
@@ -16,13 +19,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+ self.listOfCharacters= [ [NSMutableArray alloc] init]; //initializes the array on load
+    [self loadInitialData]; //initializes the data
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (void)loadInitialData{
+    self.listOfCharacters = [NSMutableArray arrayWithObjects:
+     @"Amane Nishiki",
+     @"Arakune",
+     @"Azrael",
+     @"Bang Shishigami",
+     @"Bullet",
+     @"Carl Clover",
+     @"Hakumen",
+     @"Hazama",
+     @"Iron Tager",
+     @"Izayoi",
+     @"Jin Kisaragi",
+     @"Kagura Mutsuki",
+     @"Kokonoe",
+     @"Litchi Faye Ling",
+     @"Makoto Nanaya",
+     @"Noel Vermillion",
+     @"Platinum the Trinity",
+     @"Rachel Alucard",
+     @"Ragna the Bloodedge",
+     @"Relius Clover",
+     @"Taokaka",
+     @"Tsubaki Yayoi",
+     @"Valkenhayn R. Hellsing",
+     @"Yuuki Terumi",
+     @"μ-12",
+                             @"ν-13",nil ];
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,60 +75,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.listOfCharacters count];
 }
 
-/*
+//Creates the display of the table
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CharacterListCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    NSString *characterName = [self.listOfCharacters objectAtIndex:indexPath.row];
+    cell.textLabel.text = characterName; //places it in the cell
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation
@@ -101,5 +106,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath{
+    //Figure out how to make this move in a segue with passing the string of the character selected
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    tappedItem.completed = !tappedItem.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}*/
 
 @end

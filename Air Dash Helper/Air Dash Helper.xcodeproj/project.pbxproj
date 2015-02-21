@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0925DB8B1A96FEC60092F907 /* FrameDataCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */; };
 		095D4C901A80C78F0000C5A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C8F1A80C78F0000C5A9 /* main.m */; };
 		095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C921A80C78F0000C5A9 /* AppDelegate.m */; };
 		095D4C961A80C78F0000C5A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C951A80C78F0000C5A9 /* ViewController.m */; };
@@ -20,6 +21,7 @@
 		098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */; };
 		098FD81E1A84A352003CCE0F /* RevolverActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */; };
 		098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */; };
+		09A4DD341A96E6F6006BF9DC /* FrameDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */; };
 		09D49C0A1A90201900CB861A /* Ragna.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D49C091A90201900CB861A /* Ragna.m */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0925DB891A96FEC60092F907 /* FrameDataCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataCalculator.h; sourceTree = "<group>"; };
+		0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataCalculator.m; sourceTree = "<group>"; };
 		095D4C8A1A80C78F0000C5A9 /* Air Dash Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Dash Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		095D4C8E1A80C78F0000C5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095D4C8F1A80C78F0000C5A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevolverActionTableViewController.m; sourceTree = "<group>"; };
 		098FD81F1A84A4ED003CCE0F /* CharacterFrameDataTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFrameDataTabController.h; sourceTree = "<group>"; };
 		098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFrameDataTabController.m; sourceTree = "<group>"; };
+		09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataTableViewCell.h; sourceTree = "<group>"; };
+		09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataTableViewCell.m; sourceTree = "<group>"; };
 		09D49C081A90201900CB861A /* Ragna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ragna.h; sourceTree = "<group>"; };
 		09D49C091A90201900CB861A /* Ragna.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ragna.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +108,8 @@
 		095D4C8C1A80C78F0000C5A9 /* Air Dash Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0925DB891A96FEC60092F907 /* FrameDataCalculator.h */,
+				0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */,
 				095D4C911A80C78F0000C5A9 /* AppDelegate.h */,
 				095D4C921A80C78F0000C5A9 /* AppDelegate.m */,
 				095D4C941A80C78F0000C5A9 /* ViewController.h */,
@@ -121,6 +129,8 @@
 				098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */,
 				098FD8131A849719003CCE0F /* MoveListTableViewController.h */,
 				098FD8141A849719003CCE0F /* MoveListTableViewController.m */,
+				09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */,
+				09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */,
 				095D4C9A1A80C78F0000C5A9 /* Images.xcassets */,
 				095D4C9C1A80C78F0000C5A9 /* LaunchScreen.xib */,
 				095D4C8D1A80C78F0000C5A9 /* Supporting Files */,
@@ -259,11 +269,13 @@
 				095D4C961A80C78F0000C5A9 /* ViewController.m in Sources */,
 				098FD8121A8496EF003CCE0F /* CharacterTableViewController.m in Sources */,
 				098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */,
+				09A4DD341A96E6F6006BF9DC /* FrameDataTableViewCell.m in Sources */,
 				095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */,
 				095D4C901A80C78F0000C5A9 /* main.m in Sources */,
 				098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */,
 				09619EC61A90196F00EB36E5 /* FrameDataInstance.m in Sources */,
 				098FD8151A849719003CCE0F /* MoveListTableViewController.m in Sources */,
+				0925DB8B1A96FEC60092F907 /* FrameDataCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
