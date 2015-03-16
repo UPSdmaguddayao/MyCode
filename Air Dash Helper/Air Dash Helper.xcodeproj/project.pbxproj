@@ -53,6 +53,7 @@
 		095D4CA91A80C78F0000C5A9 /* Air_Dash_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Air_Dash_HelperTests.m; sourceTree = "<group>"; };
 		09619EC41A90196E00EB36E5 /* FrameDataInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataInstance.h; sourceTree = "<group>"; };
 		09619EC51A90196F00EB36E5 /* FrameDataInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataInstance.m; sourceTree = "<group>"; };
+		098343B91AB008C900C6B946 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		098FD8101A8496EF003CCE0F /* CharacterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewController.h; sourceTree = "<group>"; };
 		098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewController.m; sourceTree = "<group>"; };
 		098FD8131A849719003CCE0F /* MoveListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveListTableViewController.h; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		095D4C8C1A80C78F0000C5A9 /* Air Dash Helper */ = {
 			isa = PBXGroup;
 			children = (
+				098343B91AB008C900C6B946 /* Character.h */,
 				0925DB891A96FEC60092F907 /* FrameDataCalculator.h */,
 				0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */,
 				095D4C911A80C78F0000C5A9 /* AppDelegate.h */,
