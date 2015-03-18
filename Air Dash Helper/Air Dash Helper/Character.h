@@ -10,14 +10,16 @@
 #import <Foundation/Foundation.h>
 #import "FrameDataInstance.h"
 
-@interface Character : NSObject
+@protocol Character <NSObject>
 
-@property NSArray* frameData;
-@property NSDictionary* revolverAction;
+@required
+@property NSArray* frameData; //holds the frame data instance of any character to be used by another class
+@property NSDictionary* revolverAction; //hold the revolver action of the character
 
 -(void)load;
 -(void)loadFrameData;
 -(void)loadRevolverAction;
 -(NSDictionary*)returnRevolverAction;
 -(NSArray*)returnFrameData;
+
 @end

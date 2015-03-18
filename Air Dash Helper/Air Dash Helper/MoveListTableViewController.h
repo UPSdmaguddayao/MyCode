@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
+#import "Ragna.h"
 
 @interface MoveListTableViewController : UITableViewController
+
+//@property Character *cha; //sadly this doesn't work well :<
+@property Ragna* rag;
+@property NSArray* characterFrameData;
+
+#warning For now, just use a bunch of if statements and use every character list there is.  Work on optimizing this option later
 
 - (IBAction)unwindToMoveList:(UIStoryboardSegue *)segue;
 

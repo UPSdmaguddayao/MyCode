@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "FrameDataInstance.h"
+#import "Character.h"
 
-@interface Ragna : NSObject
+@interface Ragna : NSObject <Character>
 
-@property NSArray* ragnaFrameData;
+#warning Make sure that these can be passed generically to another method
+@property NSArray* frameData; //apparently, the protocol also counts for holding these properties.
 //@property NSArray* ragnaRevolverAction;
-@property NSDictionary* ragnaDRevolverAction;
+@property NSDictionary* revolverAction; //still need to declare this though.
 
--(void)loadFrameData;
--(void)loadRevolverAction;
-
+//-(void)loadFrameData;
+//-(void)loadRevolverAction;
+//every method is held by by the character class
 
 @end

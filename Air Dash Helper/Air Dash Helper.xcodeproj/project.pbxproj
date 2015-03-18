@@ -110,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				098343B91AB008C900C6B946 /* Character.h */,
+				09D49C081A90201900CB861A /* Ragna.h */,
+				09D49C091A90201900CB861A /* Ragna.m */,
+				09619EC41A90196E00EB36E5 /* FrameDataInstance.h */,
+				09619EC51A90196F00EB36E5 /* FrameDataInstance.m */,
 				0925DB891A96FEC60092F907 /* FrameDataCalculator.h */,
 				0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */,
 				095D4C911A80C78F0000C5A9 /* AppDelegate.h */,
@@ -117,10 +121,6 @@
 				095D4C941A80C78F0000C5A9 /* ViewController.h */,
 				095D4C951A80C78F0000C5A9 /* ViewController.m */,
 				095D4C971A80C78F0000C5A9 /* Main.storyboard */,
-				09619EC41A90196E00EB36E5 /* FrameDataInstance.h */,
-				09619EC51A90196F00EB36E5 /* FrameDataInstance.m */,
-				09D49C081A90201900CB861A /* Ragna.h */,
-				09D49C091A90201900CB861A /* Ragna.m */,
 				098FD81F1A84A4ED003CCE0F /* CharacterFrameDataTabController.h */,
 				098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */,
 				098FD81C1A84A352003CCE0F /* RevolverActionTableViewController.h */,

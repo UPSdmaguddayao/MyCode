@@ -22,5 +22,11 @@
 //@property NSArray *attribute; //if we need this for multiple hitting moves, then fine.  Use this instead.  Otherwise, don't use this
 @property NSString *block; //how do you need to block this?  High?  Low?  Mid?  Barrier?  All?  Can't at all?  Different types:  H, L, HL (air barrier), B (barrier), All , UNBL (unblockable)
 
+-(NSString*)returnStartUp;
+-(NSString*)returnActive;
+-(NSString*)returnRecovery;
+-(NSString*)returnBlockStun;
+-(NSString*)returnInvuln;
+-(NSString*)returnFrameAdvantage;
 
 @end
