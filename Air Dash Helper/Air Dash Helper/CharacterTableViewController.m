@@ -12,6 +12,7 @@
 @interface CharacterTableViewController ()
 
 @property NSMutableArray *listOfCharacters;
+//@property NSString nameSent;
 
 @end
 
@@ -97,27 +98,37 @@
 
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Time to go");
+    if([[segue identifier] isEqualToString:@"frameDataTable"])
+    {
+        NSLog(@"The sender is %@",sender);
+    }
+    else
+    {
+        NSLog(@"Going backwards");
+        return;
+    }
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 #warning Find a way to make this into a segway to the next page
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath{
+/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath{
     //Figure out how to make this move in a segue with passing the string of the character selected
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
+    NSString *name = [self.listOfCharacters objectAtIndex:indexPath.row];
+   // [self performSegueWithIdentifier:@"frameDataTab" sender:name];
  
-    //ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
-    //tappedItem.completed = !tappedItem.completed;
  
- 
-    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
-}
+    //[tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}*/
 
 @end

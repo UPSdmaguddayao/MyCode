@@ -18,6 +18,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rzQ-Jf-5Tg" id="TX2-Hg-0Nm">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="P4f-w5-sLb" kind="show" identifier="frameDataTable" id="i2x-Aj-3a2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -39,24 +42,106 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="hDf-7u-OGO">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gXL-rd-cyf">
-                                <rect key="frame" x="497" y="15" width="87" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fake Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="lGr-WA-Ude" kind="show" id="0EJ-1f-ClZ"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D51-mD-2aQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Esh-sf-GkS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1787" y="-1249"/>
+            <point key="canvasLocation" x="-2503" y="-1065"/>
+        </scene>
+        <!--Frame Data List-->
+        <scene sceneID="rOE-X0-Bah">
+            <objects>
+                <tableViewController storyboardIdentifier="frameDataTable" id="ck0-qB-2U6" customClass="MoveListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8qC-Pg-e2O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LZV-z3-E9i">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZV-z3-E9i" id="rnL-CH-023">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ck0-qB-2U6" id="RGg-P3-d35"/>
+                            <outlet property="delegate" destination="ck0-qB-2U6" id="TFp-pX-D34"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Frame Data List" id="YMS-1D-84o">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="IPc-XH-wXY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W9Y-n3-rT8">
+                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ikJ-kr-Zgx" kind="unwind" unwindAction="unwindToCharacters:" id="8tA-N8-zXV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3yk-a0-gEV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ELN-TZ-nnI">
+                                <rect key="frame" x="484" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Revolver Action">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="28a-DU-d9n" kind="show" id="eeO-zu-z27"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5c-Ae-pXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ikJ-kr-Zgx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-977" y="-1095"/>
+        </scene>
+        <!--Revolver Action-->
+        <scene sceneID="rZh-5W-m6e">
+            <objects>
+                <tableViewController id="iZn-qx-LLQ" customClass="RevolverActionTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mKk-X1-nSm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KWN-Ku-tDc">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWN-Ku-tDc" id="Fdw-9J-tQC">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iZn-qx-LLQ" id="etm-BB-tns"/>
+                            <outlet property="delegate" destination="iZn-qx-LLQ" id="nUd-ND-w79"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Revolver Action" id="n1U-gl-MCe">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="rmE-6z-bTo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sNw-AO-eHX">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hi9-8o-iId" kind="unwind" unwindAction="unwindToMoveList:" id="P4Q-5X-5f8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYB-xv-GMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hi9-8o-iId" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="-1845"/>
         </scene>
         <!--Move List Frame Data for _____-->
         <scene sceneID="EPV-5L-ecw">
@@ -110,7 +195,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rr-He-unK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kZ8-9n-7LK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="-1787"/>
+            <point key="canvasLocation" x="3889" y="-1817"/>
         </scene>
         <!--Main Menu Collection View Controller-->
         <scene sceneID="PKB-8e-o9M">
@@ -279,7 +364,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmt-uM-hvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2907" y="-971"/>
+            <point key="canvasLocation" x="-3205" y="-1051"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Sj-Mw-TRr">
@@ -467,7 +552,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbd-eP-vGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="-1787"/>
+            <point key="canvasLocation" x="3103" y="-1807"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rvl-UM-IVC">
@@ -486,11 +571,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMH-hm-Zio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767" y="-1465"/>
+            <point key="canvasLocation" x="2193" y="-1449"/>
         </scene>
         <!--Revolver Action Table-->
         <scene sceneID="a5K-Pc-mJQ">
             <objects>
+                <exit id="tcn-g0-V98" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7y0-NU-XNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="rEp-fk-Wv0" customClass="RevolverActionTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VMt-j4-fge">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -524,10 +611,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7y0-NU-XNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="tcn-g0-V98" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1597" y="-961"/>
+            <point key="canvasLocation" x="3091" y="-999"/>
         </scene>
         <!--Move Cancels-->
         <scene sceneID="mWe-Va-4gd">
@@ -546,7 +631,43 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cw-nu-m6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="-937"/>
+            <point key="canvasLocation" x="2291" y="-909"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KrW-OY-lxf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P4f-w5-sLb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8o-55-U6f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ck0-qB-2U6" kind="relationship" relationship="rootViewController" id="yKV-c6-So8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8a-TG-63U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1767" y="-1095"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XZX-YH-FgT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="28a-DU-d9n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DEq-eT-F1u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iZn-qx-LLQ" kind="relationship" relationship="rootViewController" id="xQl-Ji-WbS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIe-RM-pf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291" y="-1477"/>
         </scene>
     </scenes>
 </document>
