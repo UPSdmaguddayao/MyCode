@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LZV-z3-E9i">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoveListCell" id="LZV-z3-E9i">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZV-z3-E9i" id="rnL-CH-023">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -576,8 +576,6 @@
         <!--Revolver Action Table-->
         <scene sceneID="a5K-Pc-mJQ">
             <objects>
-                <exit id="tcn-g0-V98" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7y0-NU-XNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="rEp-fk-Wv0" customClass="RevolverActionTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VMt-j4-fge">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -611,6 +609,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <exit id="tcn-g0-V98" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7y0-NU-XNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3091" y="-999"/>
         </scene>
