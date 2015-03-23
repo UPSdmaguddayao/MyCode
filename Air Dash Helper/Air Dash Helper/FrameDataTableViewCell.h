@@ -10,6 +10,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FrameDataTableViewCell : UITableViewCell
+@interface FrameDataTableViewCell : UITableViewCell <UITableViewDelegate, UITableViewDataSource>
+{
+    UITableView *_horizontalTableView;
+    NSArray *_moveData;
+}
+
+@property (nonatomic, retain) UITableView *horizontalTableView;
+@property (nonatomic, retain) NSArray *moveData;
 
 @end

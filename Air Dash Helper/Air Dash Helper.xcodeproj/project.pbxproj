@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09032B041AC07A1F00660C86 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09032B031AC07A1F00660C86 /* Property List.plist */; };
 		0925DB8B1A96FEC60092F907 /* FrameDataCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */; };
 		095D4C901A80C78F0000C5A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C8F1A80C78F0000C5A9 /* main.m */; };
 		095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D4C921A80C78F0000C5A9 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0900DA871AC092D7000AEC4B /* ControlVariables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlVariables.h; sourceTree = "<group>"; };
+		09032B031AC07A1F00660C86 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		0925DB891A96FEC60092F907 /* FrameDataCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataCalculator.h; sourceTree = "<group>"; };
 		0925DB8A1A96FEC60092F907 /* FrameDataCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataCalculator.m; sourceTree = "<group>"; };
 		095D4C8A1A80C78F0000C5A9 /* Air Dash Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Dash Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0900DA861AC092B8000AEC4B /* Utility Files */ = {
+			isa = PBXGroup;
+			children = (
+				0900DA871AC092D7000AEC4B /* ControlVariables.h */,
+			);
+			name = "Utility Files";
+			sourceTree = "<group>";
+		};
+		0900DA881AC09431000AEC4B /* Horizontal Table */ = {
+			isa = PBXGroup;
+			children = (
+				09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */,
+				09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */,
+			);
+			name = "Horizontal Table";
+			sourceTree = "<group>";
+		};
 		095D4C811A80C78F0000C5A9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +129,7 @@
 		095D4C8C1A80C78F0000C5A9 /* Air Dash Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0900DA861AC092B8000AEC4B /* Utility Files */,
 				098343B91AB008C900C6B946 /* Character.h */,
 				09D49C081A90201900CB861A /* Ragna.h */,
 				09D49C091A90201900CB861A /* Ragna.m */,
@@ -129,8 +150,8 @@
 				098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */,
 				098FD8131A849719003CCE0F /* MoveListTableViewController.h */,
 				098FD8141A849719003CCE0F /* MoveListTableViewController.m */,
-				09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */,
-				09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */,
+				09032B031AC07A1F00660C86 /* Property List.plist */,
+				0900DA881AC09431000AEC4B /* Horizontal Table */,
 				098FD81C1A84A352003CCE0F /* RevolverActionTableViewController.h */,
 				098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */,
 				095D4C9A1A80C78F0000C5A9 /* Images.xcassets */,
@@ -248,6 +269,7 @@
 			files = (
 				095D4C991A80C78F0000C5A9 /* Main.storyboard in Resources */,
 				095D4C9E1A80C78F0000C5A9 /* LaunchScreen.xib in Resources */,
+				09032B041AC07A1F00660C86 /* Property List.plist in Resources */,
 				095D4C9B1A80C78F0000C5A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
