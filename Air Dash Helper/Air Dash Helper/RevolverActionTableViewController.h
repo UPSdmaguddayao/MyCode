@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RevolverActionTableViewController : UITableViewController
+@property (strong, nonatomic) NSString *character;
+-(void)setCharacterName:(NSString *)characterName;
 
 @end

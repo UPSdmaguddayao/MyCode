@@ -8,6 +8,7 @@
 
 #import "MoveListTableViewController.h"
 #import "CharacterTableViewController.h"
+#import "RevolverActionTableViewController.h"
 
 
 @interface MoveListTableViewController ()
@@ -15,18 +16,18 @@
 
 
 @implementation MoveListTableViewController
-@synthesize characterName;
+@synthesize character;
 
 
-- (void)setCharacter:(NSString *)character
+- (void)setCharacterName:(NSString *)characterName
 {
-    characterName = character;
-    NSLog(@"Set character is @%",characterName);
+    character = characterName;
+    NSLog(@"Setting the character as %@",character);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"Set character is %@",self.character);
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -39,10 +40,7 @@
 
 - (IBAction)unwindToMoveList:(UIStoryboardSegue *)segue
 {
-    /*CharacterTableViewController *source = [segue sourceViewController];
-    character = source.characterName;
-    
-    NSLog(@"Was given the character %@",character);*/
+    [self viewDidLoad];
 
 }
 
@@ -72,14 +70,34 @@
     return cell;
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSLog(@"Time to go to Revolver Action");
+    //NSString *character = send.textLabel.text;
+    if([[segue identifier] isEqualToString:@"RevolverAction"])
+    {
+        NSLog(@"The sender is %@",self.character);
+        // Get the new view controller using [segue destinationViewController]
+        
+        //MoveListTableViewController *mlt = [segue destinationViewController];
+        UINavigationController *nc = [segue destinationViewController];
+        RevolverActionTableViewController *ra = (RevolverActionTableViewController*)([nc viewControllers][0]);
+        [ra setCharacterName:self.character];
+        // Pass the selected object to the new view controller.
+    }
+    else
+    {
+        NSLog(@"Going back to CharacterTable");
+        return;
+    }
+
+    //RevolverAction
 }
-*/
+
 
 @end

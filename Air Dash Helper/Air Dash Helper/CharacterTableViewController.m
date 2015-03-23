@@ -9,7 +9,6 @@
 #import "CharacterTableViewController.h"
 #import "Ragna.h"
 #import "MoveListTableViewController.h"
-#import "characterController.h"
 
 @interface CharacterTableViewController ()
 
@@ -115,12 +114,11 @@
         NSLog(@"The sender is %@",self.characterName);
         // Get the new view controller using [segue destinationViewController]
         
-        characterController *cc = [segue destinationViewController];
-        cc.character = self.characterName;
-        //NSLog(@"The reciever is %@",stuff);
+        //MoveListTableViewController *mlt = [segue destinationViewController];
+        UINavigationController *nc = [segue destinationViewController];
+        MoveListTableViewController *ml = (MoveListTableViewController*)([nc viewControllers][0]);
         // Pass the selected object to the new view controller.
-        
-       // mlt.character = @"Hi";
+        [ml setCharacterName:self.characterName];
     }
     else
     {
@@ -135,8 +133,11 @@
     //Figure out how to make this move in a segue with passing the string of the character selected
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    NSString *name = [self.listOfCharacters objectAtIndex:indexPath.row];
-   // [self performSegueWithIdentifier:@"frameDataTab" sender:name];
+    NSLog(@"Selected a row");
+    UITableViewCell *cell = [self.listOfCharacters objectAtIndex:indexPath.row];
+    NSString *name - cell.textLabel.text;
+    NSLog(@"Selected the name %@",name);
+    [self performSegueWithIdentifier:@"frameDataTable" sender:name]; //this sends items
  
  
     //[tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];

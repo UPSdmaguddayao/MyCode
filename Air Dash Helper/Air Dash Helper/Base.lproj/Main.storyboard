@@ -91,7 +91,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="28a-DU-d9n" kind="show" id="eeO-zu-z27"/>
+                                    <segue destination="28a-DU-d9n" kind="show" identifier="RevolverAction" id="eeO-zu-z27"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -633,10 +633,11 @@
             </objects>
             <point key="canvasLocation" x="2291" y="-909"/>
         </scene>
-        <!--Character Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="KrW-OY-lxf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P4f-w5-sLb" customClass="characterController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8a-TG-63U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P4f-w5-sLb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8o-55-U6f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -647,7 +648,6 @@
                         <segue destination="ck0-qB-2U6" kind="relationship" relationship="rootViewController" id="yKV-c6-So8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C8a-TG-63U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1767" y="-1095"/>
         </scene>
