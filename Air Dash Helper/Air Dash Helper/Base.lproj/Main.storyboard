@@ -52,7 +52,7 @@
         <!--Frame Data List-->
         <scene sceneID="rOE-X0-Bah">
             <objects>
-                <tableViewController storyboardIdentifier="frameDataTable" id="ck0-qB-2U6" customClass="MoveListTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="frameData" id="ck0-qB-2U6" customClass="MoveListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8qC-Pg-e2O">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,10 +633,10 @@
             </objects>
             <point key="canvasLocation" x="2291" y="-909"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Character Controller-->
         <scene sceneID="KrW-OY-lxf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P4f-w5-sLb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P4f-w5-sLb" customClass="characterController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8o-55-U6f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

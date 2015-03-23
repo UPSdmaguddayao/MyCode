@@ -23,6 +23,7 @@
 		098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */; };
 		09A4DD341A96E6F6006BF9DC /* FrameDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */; };
 		09D49C0A1A90201900CB861A /* Ragna.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D49C091A90201900CB861A /* Ragna.m */; };
+		09D70AD11ABF9E5B0092391A /* characterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D70AD01ABF9E5B0092391A /* characterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataTableViewCell.m; sourceTree = "<group>"; };
 		09D49C081A90201900CB861A /* Ragna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ragna.h; sourceTree = "<group>"; };
 		09D49C091A90201900CB861A /* Ragna.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ragna.m; sourceTree = "<group>"; };
+		09D70ACF1ABF9E5B0092391A /* characterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterController.h; sourceTree = "<group>"; };
+		09D70AD01ABF9E5B0092391A /* characterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = characterController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */,
 				098FD8101A8496EF003CCE0F /* CharacterTableViewController.h */,
 				098FD8111A8496EF003CCE0F /* CharacterTableViewController.m */,
+				09D70ACF1ABF9E5B0092391A /* characterController.h */,
+				09D70AD01ABF9E5B0092391A /* characterController.m */,
 				098FD8131A849719003CCE0F /* MoveListTableViewController.h */,
 				098FD8141A849719003CCE0F /* MoveListTableViewController.m */,
 				09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */,
@@ -275,6 +280,7 @@
 				095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */,
 				095D4C901A80C78F0000C5A9 /* main.m in Sources */,
 				098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */,
+				09D70AD11ABF9E5B0092391A /* characterController.m in Sources */,
 				09619EC61A90196F00EB36E5 /* FrameDataInstance.m in Sources */,
 				098FD8151A849719003CCE0F /* MoveListTableViewController.m in Sources */,
 				0925DB8B1A96FEC60092F907 /* FrameDataCalculator.m in Sources */,

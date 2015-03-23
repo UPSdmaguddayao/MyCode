@@ -8,6 +8,8 @@
 
 #import "CharacterTableViewController.h"
 #import "Ragna.h"
+#import "MoveListTableViewController.h"
+#import "characterController.h"
 
 @interface CharacterTableViewController ()
 
@@ -104,18 +106,27 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"Time to go");
+    UITableViewCell *send = (UITableViewCell*)sender; //need to set it like this in order to send the string correctly
+    //NSString *character = send.textLabel.text;
+    self.characterName = [[NSString alloc] init];
+    self.characterName = send.textLabel.text;
     if([[segue identifier] isEqualToString:@"frameDataTable"])
     {
-        NSLog(@"The sender is %@",sender);
+        NSLog(@"The sender is %@",self.characterName);
+        // Get the new view controller using [segue destinationViewController]
+        
+        characterController *cc = [segue destinationViewController];
+        cc.character = self.characterName;
+        //NSLog(@"The reciever is %@",stuff);
+        // Pass the selected object to the new view controller.
+        
+       // mlt.character = @"Hi";
     }
     else
     {
         NSLog(@"Going backwards");
         return;
     }
-    
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 
 #warning Find a way to make this into a segway to the next page

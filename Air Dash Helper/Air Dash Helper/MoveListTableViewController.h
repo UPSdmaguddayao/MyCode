@@ -14,10 +14,12 @@
 
 //@property Character *cha; //sadly this doesn't work well :<
 @property Ragna* rag;
+@property (strong, nonatomic) NSString *characterName; //gets this string passed to it so it can get a character
 @property NSArray* characterFrameData;
 
 #warning For now, just use a bunch of if statements and use every character list there is.  Work on optimizing this option later
 
 - (IBAction)unwindToMoveList:(UIStoryboardSegue *)segue;
+-(void)setCharacterName:(NSString *)characterName;
 
 @end

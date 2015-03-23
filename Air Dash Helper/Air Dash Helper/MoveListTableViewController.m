@@ -7,12 +7,22 @@
 //
 
 #import "MoveListTableViewController.h"
+#import "CharacterTableViewController.h"
+
 
 @interface MoveListTableViewController ()
-
 @end
 
+
 @implementation MoveListTableViewController
+@synthesize characterName;
+
+
+- (void)setCharacter:(NSString *)character
+{
+    characterName = character;
+    NSLog(@"Set character is @%",characterName);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +39,11 @@
 
 - (IBAction)unwindToMoveList:(UIStoryboardSegue *)segue
 {
+    /*CharacterTableViewController *source = [segue sourceViewController];
+    character = source.characterName;
     
+    NSLog(@"Was given the character %@",character);*/
+
 }
 
 #pragma mark - Table view data source
@@ -57,34 +71,6 @@
     
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
 
 /*
 #pragma mark - Navigation

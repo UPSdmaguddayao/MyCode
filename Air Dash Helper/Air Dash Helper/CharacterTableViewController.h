@@ -10,6 +10,8 @@
 
 @interface CharacterTableViewController : UITableViewController
 
+@property NSString *characterName;
+
 - (IBAction)unwindToCharacters:(UIStoryboardSegue *)segue;
 
 @end
