@@ -9,14 +9,19 @@
 
 
 #import <UIKit/UIKit.h>
+#import "FrameDataInstance.h"
 
 @interface FrameDataTableViewCell : UITableViewCell <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView *_horizontalTableView;
-    NSArray *_moveData;
+    //NSArray *_moveData;
+    FrameDataInstance *_moveData;
 }
 
 @property (nonatomic, retain) UITableView *horizontalTableView;
-@property (nonatomic, retain) NSArray *moveData;
+//@property (nonatomic, retain) NSArray *moveData;
+@property (nonatomic, retain) FrameDataInstance *moveData;
+
+//-(void)setMove:(FrameDataInstance *)move;
 
 @end

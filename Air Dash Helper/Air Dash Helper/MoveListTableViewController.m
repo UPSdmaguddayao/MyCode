@@ -9,6 +9,10 @@
 #import "MoveListTableViewController.h"
 #import "CharacterTableViewController.h"
 #import "RevolverActionTableViewController.h"
+#import "FrameDataTableViewCell.h"
+#import "ControlVariables.h"
+#import "FrameDataInstance.h"
+
 
 
 @interface MoveListTableViewController ()
@@ -23,6 +27,10 @@
 {
     character = characterName;
     NSLog(@"Setting the character as %@",character);
+    NSLog(@"Test, using Ragna Data");
+    _rag = [Ragna alloc];
+    [_rag loadFrameData];
+    _characterFrameData = _rag.returnFrameData;
 }
 
 - (void)viewDidLoad {
@@ -33,6 +41,17 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+/*-(void)resizeTableView: (UITableView*)theTableView toWidth:(CGFloat)newWidth
+{
+    CGRect tableViewFrame = theTableView.frame;
+    tableViewFrame.size.width = newWidth;
+    theTableView.frame = tableViewFrame;
+}*/
+
+-(void)setFrame:(CGRect)frame{
+    frame.origin.x +- 100;
+    frame.size.width -= 200;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -55,7 +74,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1; //prototype stuff for testing.  We'll make it from what the array is soon
+    return _characterFrameData.count; //prototype stuff for testing.  We'll make it from what the array is soon
 }
 
 
@@ -65,9 +84,26 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Vertical Table Rows on iPhone";
+    cell.textLabel.text = @"Vertical Table Rows on iPhone that keep on going forever";
     
-    return cell;
+    return cell;/*
+    FrameDataTableViewCell *cell = (FrameDataTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[FrameDataTableViewCell alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)];
+    }
+    
+    //NSLog(@"Grabbing a move");
+    //FrameDataInstance *currentMove = [_characterFrameData objectAtIndex:indexPath.row]; //the item we should get is a frame data instance
+   // NSLog (@"Testing data: %@",currentMove.moveName);
+    //NSString *moveName = [currentMove objectAtIndex:0]; //first thing should be the move name
+    
+    //NSLog(@"Setting Move Data");
+    //cell.moveData= currentMove; //moveData is an array
+    //[cell setMove:currentMove];
+    
+    return cell;*/
+
 }
 
 

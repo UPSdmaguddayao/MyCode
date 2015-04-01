@@ -31,6 +31,28 @@
     nA.attribute = @"B";
     nA.block = @"All";
     
+    /*NSString *notation = @"5A";
+    NSString *moveName = @"5A";
+    NSInteger *startUp = 5;
+    NSArray *activeFrames = [NSArray arrayWithObjects: @3,nil];
+    NSArray *recoveryFrames = [NSArray arrayWithObjects: @9,nil];
+    NSInteger *blockStun = 11;
+    NSInteger *frameAdv = 0;
+    NSArray *invuln = [NSArray arrayWithObjects: @"no", nil];
+    NSString *attribute = @"B";
+    NSString *block = @"All";
+    NSArray *nA = [NSArray arrayWithObjects: @"5A",
+                   @"5A",
+                   @5,
+                   [NSArray arrayWithObjects: @3,nil],
+                   [NSArray arrayWithObjects: @9,nil],
+                   @11,
+                   @0,
+                   "@no",
+                   @"B",
+                   @"All", nil];*/
+    /*NSArray *nA = [NSArray arrayWithObjects: notation, moveName, startUp, activeFrames,recoveryFrames, blockStun, frameAdv, invuln, attribute, block, nil];*/
+    
     FrameDataInstance *nB = [[FrameDataInstance alloc] init];
     nB.notation = @"5B";
     nB.moveName = @"5B";
@@ -43,7 +65,19 @@
     nB.frameAdv = -7;
     nB.invuln = nil;
     nB.attribute = @"B";
-    nB.block = @"HL";
+    nB.block = @"HL";/*
+    
+    NSArray *nB = [NSArray arrayWithObjects: @"5B",
+                   @"5B",
+                   8,
+                   [NSArray arrayWithObjects: @8,nil],
+                   [NSArray arrayWithObjects: @16,nil],
+                   16,
+                   -7,
+                   "@no",
+                   @"B",
+                   @"HL", nil];
+    */
     
     self.frameData = [NSArray arrayWithObjects:nA,nB, nil]; //work with this for now.  Figure out how to make it more efficient at loading later.
     
