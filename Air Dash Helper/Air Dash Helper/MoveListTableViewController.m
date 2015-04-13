@@ -9,7 +9,6 @@
 #import "MoveListTableViewController.h"
 #import "CharacterTableViewController.h"
 #import "RevolverActionTableViewController.h"
-#import "FrameDataTableViewCell.h"
 #import "ControlVariables.h"
 #import "FrameDataInstance.h"
 
@@ -21,37 +20,101 @@
 
 @implementation MoveListTableViewController
 @synthesize character;
+@synthesize moves;
 
 
 - (void)setCharacterName:(NSString *)characterName
 {
     character = characterName;
     NSLog(@"Setting the character as %@",character);
-    NSLog(@"Test, using Ragna Data");
-    _rag = [Ragna alloc];
-    [_rag loadFrameData];
-    _characterFrameData = _rag.returnFrameData;
 }
 
+- (void)setMoveList:(NSDictionary *)moveList
+{
+    moves = moveList;
+    NSLog(@"Setting move list");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Set character is %@",self.character);
+    //NSLog(@"Test, using Ragna Data");
+    //character name and movelist should be set.  Now try getting move data.
+    NSDictionary *ground =[moves objectForKey:@"Ground"];
+    NSDictionary *air = [moves objectForKey:@"Air"];
+    NSDictionary *spec = [moves objectForKey:@"Special"];
+    NSDictionary *sup = [moves objectForKey:@"Super"];
+    NSDictionary *ast = [moves objectForKey:@"Astral"];
+    _moveNotation = [[NSMutableArray alloc] init];
+    _moveData = [[NSMutableArray alloc] init];
+    //run this in a loop to create two arrays.  First one is a list of moves.  Second one is move data
+    NSArray *stand= [[[ground objectForKey:@"5"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    for (int i = 0; i< stand.count;)
+    {
+        NSString *notation =[stand objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[[ground objectForKey:@"5"] objectForKey:notation]];
+        i +=1;
+    }
+    NSLog(@"%lu",(unsigned long)_moveNotation.count);
+    NSArray *crouch = [[[ground objectForKey:@"2"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< crouch.count;)
+    {
+        NSString *notation =[crouch objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[[ground objectForKey:@"2"] objectForKey:notation]];
+        i +=1;
+    }
+    NSLog(@"%lu",(unsigned long)_moveNotation.count);
+    NSArray *forward = [[[ground objectForKey:@"6"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< forward.count;)
+    {
+        NSString *notation =[forward objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[[ground objectForKey:@"6"] objectForKey:notation]];
+        i +=1;
+    }
+    NSArray *other = [[[ground objectForKey:@"Other"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< other.count;)
+    {
+        NSString *notation =[other objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[[ground objectForKey:@"Other"] objectForKey:notation]];
+        i +=1;
+    }
+    NSArray *aerial = [[air allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< aerial.count;)
+    {
+        NSString *notation =[aerial objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[air objectForKey:notation]];
+        i +=1;
+    }
+    NSArray *specials =[[spec allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< specials.count;)
+    {
+        NSString *notation =[specials objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[spec objectForKey:notation]];
+        i +=1;
+    }
+    NSArray *supers =[[sup allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< supers.count;)
+    {
+        NSString *notation =[supers objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[sup objectForKey:notation]];
+        i +=1;
+    }
+    NSArray *astral = [[ast allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< astral.count;)
+    {
+        NSString *notation =[astral objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[ast objectForKey:notation]];
+        i +=1;
+    }
 }
 
-/*-(void)resizeTableView: (UITableView*)theTableView toWidth:(CGFloat)newWidth
-{
-    CGRect tableViewFrame = theTableView.frame;
-    tableViewFrame.size.width = newWidth;
-    theTableView.frame = tableViewFrame;
-}*/
-
--(void)setFrame:(CGRect)frame{
-    frame.origin.x +- 100;
-    frame.size.width -= 200;
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -66,15 +129,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1; //each of these will be a table, so only need one
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return _characterFrameData.count; //prototype stuff for testing.  We'll make it from what the array is soon
+    return _moveNotation.count; //prototype stuff for testing.  We'll make it from what the array soon
 }
 
 
@@ -84,25 +145,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Vertical Table Rows on iPhone that keep on going forever";
+  //  FrameDataInstance *fd = [_characterFrameData objectAtIndex:indexPath.row];
+    NSString *move =[_moveNotation objectAtIndex:indexPath.row];
+    NSArray *moveD = [_moveData objectAtIndex:indexPath.row];
+
+    NSString *string = [NSString stringWithFormat:@"%@ \t\t\t %@ \t\t\t %@", move,[moveD objectAtIndex:1],[moveD objectAtIndex:5]];
+    cell.textLabel.text = string;
     
-    return cell;/*
-    FrameDataTableViewCell *cell = (FrameDataTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil)
-    {
-        cell = [[FrameDataTableViewCell alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, tableView.frame.size.height)];
-    }
-    
-    //NSLog(@"Grabbing a move");
-    //FrameDataInstance *currentMove = [_characterFrameData objectAtIndex:indexPath.row]; //the item we should get is a frame data instance
-   // NSLog (@"Testing data: %@",currentMove.moveName);
-    //NSString *moveName = [currentMove objectAtIndex:0]; //first thing should be the move name
-    
-    //NSLog(@"Setting Move Data");
-    //cell.moveData= currentMove; //moveData is an array
-    //[cell setMove:currentMove];
-    
-    return cell;*/
+    return cell;
 
 }
 

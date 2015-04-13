@@ -12,7 +12,8 @@
 
 @interface CharacterTableViewController ()
 
-@property NSMutableArray *listOfCharacters;
+//@property NSMutableArray *listOfCharacters;
+@property NSArray *listOfCharacters;
 //@property NSString nameSent;
 
 @end
@@ -22,7 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
- self.listOfCharacters= [ [NSMutableArray alloc] init]; //initializes the array on load
+    NSString* filepath = [[NSBundle mainBundle] pathForResource:@"Property List" ofType:@"plist"];
+    self.characterList = [NSDictionary dictionaryWithContentsOfFile:filepath];
+    
+    self.listOfCharacters= [ [NSArray alloc] init]; //initializes the array on load
     [self loadInitialData]; //initializes the data
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,35 +36,7 @@
 }
 
 - (void)loadInitialData{
-    self.listOfCharacters = [NSMutableArray arrayWithObjects:
-     @"Amane Nishiki",
-     @"Arakune",
-     @"Azrael",
-     @"Bang Shishigami",
-     @"Bullet",
-     @"Carl Clover",
-     @"Hakumen",
-     @"Hazama",
-     @"Iron Tager",
-     @"Izayoi",
-     @"Jin Kisaragi",
-     @"Kagura Mutsuki",
-     @"Kokonoe",
-     @"Litchi Faye Ling",
-     @"Makoto Nanaya",
-     @"Noel Vermillion",
-     @"Platinum the Trinity",
-     @"Rachel Alucard",
-     @"Ragna the Bloodedge",
-     @"Relius Clover",
-     @"Taokaka",
-     @"Tsubaki Yayoi",
-     @"Valkenhayn R. Hellsing",
-     @"Yuuki Terumi",
-     @"μ-12",
-                             @"ν-13",nil ];
-    
-    
+    self.listOfCharacters = [[self.characterList allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 }
 
 
@@ -114,11 +90,12 @@
         NSLog(@"The sender is %@",self.characterName);
         // Get the new view controller using [segue destinationViewController]
         
-        //MoveListTableViewController *mlt = [segue destinationViewController];
         UINavigationController *nc = [segue destinationViewController];
         MoveListTableViewController *ml = (MoveListTableViewController*)([nc viewControllers][0]);
         // Pass the selected object to the new view controller.
         [ml setCharacterName:self.characterName];
+        NSDictionary *moves = [self.characterList objectForKey:self.characterName];
+        [ml setMoveList:moves];
     }
     else
     {

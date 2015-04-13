@@ -22,9 +22,6 @@
 		098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */; };
 		098FD81E1A84A352003CCE0F /* RevolverActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */; };
 		098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */; };
-		09A4DD341A96E6F6006BF9DC /* FrameDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */; };
-		09B7EFFD1ACBC540002A4181 /* FDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7EFFC1ACBC540002A4181 /* FDCell.m */; };
-		09B7F0011ACBEA59002A4181 /* SliderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F0001ACBEA59002A4181 /* SliderTableCell.m */; };
 		09D49C0A1A90201900CB861A /* Ragna.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D49C091A90201900CB861A /* Ragna.m */; };
 /* End PBXBuildFile section */
 
@@ -69,12 +66,6 @@
 		098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevolverActionTableViewController.m; sourceTree = "<group>"; };
 		098FD81F1A84A4ED003CCE0F /* CharacterFrameDataTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFrameDataTabController.h; sourceTree = "<group>"; };
 		098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFrameDataTabController.m; sourceTree = "<group>"; };
-		09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameDataTableViewCell.h; sourceTree = "<group>"; };
-		09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameDataTableViewCell.m; sourceTree = "<group>"; };
-		09B7EFFB1ACBC540002A4181 /* FDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCell.h; sourceTree = "<group>"; };
-		09B7EFFC1ACBC540002A4181 /* FDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCell.m; sourceTree = "<group>"; };
-		09B7EFFF1ACBEA59002A4181 /* SliderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderTableCell.h; sourceTree = "<group>"; };
-		09B7F0001ACBEA59002A4181 /* SliderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderTableCell.m; sourceTree = "<group>"; };
 		09D49C081A90201900CB861A /* Ragna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ragna.h; sourceTree = "<group>"; };
 		09D49C091A90201900CB861A /* Ragna.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ragna.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,20 +91,10 @@
 		0900DA861AC092B8000AEC4B /* Utility Files */ = {
 			isa = PBXGroup;
 			children = (
+				09032B031AC07A1F00660C86 /* Property List.plist */,
 				0900DA871AC092D7000AEC4B /* ControlVariables.h */,
 			);
 			name = "Utility Files";
-			sourceTree = "<group>";
-		};
-		0900DA881AC09431000AEC4B /* Horizontal Table */ = {
-			isa = PBXGroup;
-			children = (
-				09A4DD321A96E6F4006BF9DC /* FrameDataTableViewCell.h */,
-				09A4DD331A96E6F6006BF9DC /* FrameDataTableViewCell.m */,
-				09B7EFFB1ACBC540002A4181 /* FDCell.h */,
-				09B7EFFC1ACBC540002A4181 /* FDCell.m */,
-			);
-			name = "Horizontal Table";
 			sourceTree = "<group>";
 		};
 		095D4C811A80C78F0000C5A9 = {
@@ -154,10 +135,7 @@
 				098FD8201A84A4ED003CCE0F /* CharacterFrameDataTabController.m */,
 				098FD8161A849A6D003CCE0F /* MainMenuCollectionViewController.h */,
 				098FD8171A849A6D003CCE0F /* MainMenuCollectionViewController.m */,
-				09B7F0021ACBEA67002A4181 /* Slider */,
 				09B7EFFE1ACBC9C4002A4181 /* ViewControllers */,
-				09032B031AC07A1F00660C86 /* Property List.plist */,
-				0900DA881AC09431000AEC4B /* Horizontal Table */,
 				098FD81C1A84A352003CCE0F /* RevolverActionTableViewController.h */,
 				098FD81D1A84A352003CCE0F /* RevolverActionTableViewController.m */,
 				095D4C9A1A80C78F0000C5A9 /* Images.xcassets */,
@@ -202,15 +180,6 @@
 				098FD8141A849719003CCE0F /* MoveListTableViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		09B7F0021ACBEA67002A4181 /* Slider */ = {
-			isa = PBXGroup;
-			children = (
-				09B7EFFF1ACBEA59002A4181 /* SliderTableCell.h */,
-				09B7F0001ACBEA59002A4181 /* SliderTableCell.m */,
-			);
-			name = Slider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,11 +288,8 @@
 				095D4C961A80C78F0000C5A9 /* ViewController.m in Sources */,
 				098FD8121A8496EF003CCE0F /* CharacterTableViewController.m in Sources */,
 				098FD8211A84A4ED003CCE0F /* CharacterFrameDataTabController.m in Sources */,
-				09B7F0011ACBEA59002A4181 /* SliderTableCell.m in Sources */,
-				09A4DD341A96E6F6006BF9DC /* FrameDataTableViewCell.m in Sources */,
 				095D4C931A80C78F0000C5A9 /* AppDelegate.m in Sources */,
 				095D4C901A80C78F0000C5A9 /* main.m in Sources */,
-				09B7EFFD1ACBC540002A4181 /* FDCell.m in Sources */,
 				098FD8181A849A6D003CCE0F /* MainMenuCollectionViewController.m in Sources */,
 				09619EC61A90196F00EB36E5 /* FrameDataInstance.m in Sources */,
 				098FD8151A849719003CCE0F /* MoveListTableViewController.m in Sources */,
