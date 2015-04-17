@@ -50,12 +50,14 @@
 				<key>5A</key>
 				<array>
 					<string>5A</string>
-					<integer>5</integer>
+					<array>
+						<integer>5</integer>
+					</array>
 					<array>
 						<integer>3</integer>
 					</array>
 					<array>
-						<integer>0</integer>
+						<false/>
 						<integer>9</integer>
 					</array>
 					<integer>11</integer>
@@ -65,265 +67,549 @@
 					</array>
 					<string>B</string>
 					<string>All</string>
+					<string>Standard Jab</string>
+					<array>
+						<string>5A</string>
+						<string>6A</string>
+						<string>2A</string>
+						<string>5B</string>
+						<string>2B</string>
+						<string>6B</string>
+						<string>5C</string>
+						<string>2C</string>
+						<string>6C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>5BC</string>
+						<string>8</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>5B</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>5B</string>
 					<array>
-						<integer>3</integer>
+						<integer>8</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>8</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<array>
+						<false/>
+						<integer>16</integer>
+					</array>
+					<integer>16</integer>
+					<integer>-7</integer>
 					<array>
 						<integer>0</integer>
 					</array>
 					<string>B</string>
-					<string>All</string>
+					<string>HL</string>
+					<string>Good Poke.  Can Kara into Barrier or Throw</string>
+					<array>
+						<string>6A</string>
+						<string>2B</string>
+						<string>5C</string>
+						<string>2C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>5C</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>5C</string>
 					<array>
-						<integer>3</integer>
+						<integer>13</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>4</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<array>
+						<false/>
+						<integer>20</integer>
+					</array>
+					<integer>18</integer>
+					<integer>-5</integer>
 					<array>
 						<integer>0</integer>
 					</array>
 					<string>B</string>
-					<string>All</string>
+					<string>HL</string>
+					<string>Good poke.  Cancel into 2C for nice frame advantage</string>
+					<array>
+						<string>6A</string>
+						<string>2C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 			</dict>
 			<key>2</key>
 			<dict>
 				<key>2A</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>2A</string>
 					<array>
-						<integer>3</integer>
+						<integer>7</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>2</integer>
+					</array>
+					<array>
+						<false/>
+						<integer>10</integer>
 					</array>
 					<integer>11</integer>
 					<integer>0</integer>
 					<array>
 						<integer>0</integer>
 					</array>
-					<string>B</string>
+					<string>F</string>
 					<string>All</string>
+					<string>Not a low.  Good for tickthrows on crouchers</string>
+					<array>
+						<string>5A</string>
+						<string>2A</string>
+						<string>5B</string>
+						<string>2B</string>
+						<string>6B</string>
+						<string>5C</string>
+						<string>2C</string>
+						<string>6C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>2B</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>2B</string>
 					<array>
-						<integer>3</integer>
-					</array>
-					<array>
-						<integer>0</integer>
 						<integer>9</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<array>
+						<integer>2</integer>
+					</array>
+					<array>
+						<false/>
+						<integer>15</integer>
+					</array>
+					<integer>13</integer>
+					<integer>-3</integer>
 					<array>
 						<integer>0</integer>
 					</array>
-					<string>B</string>
-					<string>All</string>
+					<string>F</string>
+					<string>L</string>
+					<string>Go to low.  2B 5B is gapless on block</string>
+					<array>
+						<string>5B</string>
+						<string>6B</string>
+						<string>5C</string>
+						<string>2C</string>
+						<string>6C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>2C</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>2C</string>
+					<array>
+						<integer>12</integer>
+					</array>
 					<array>
 						<integer>3</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<false/>
+						<integer>13</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<integer>16</integer>
+					<integer>1</integer>
 					<array>
 						<integer>0</integer>
 					</array>
-					<string>B</string>
-					<string>All</string>
+					<string>F</string>
+					<string>HL</string>
+					<string>Safe on block, no complete safe revolver actions though</string>
+					<array>
+						<string>6A</string>
+						<string>6B</string>
+						<string>5C</string>
+						<string>6C</string>
+						<string>3C</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 			</dict>
 			<key>6</key>
 			<dict>
 				<key>6A</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>6A</string>
 					<array>
-						<integer>3</integer>
+						<integer>13</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>4</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
 					<array>
-						<integer>0</integer>
+						<false/>
+						<integer>24</integer>
+					</array>
+					<integer>16</integer>
+					<integer>-11</integer>
+					<array>
+						<integer>4</integer>
+						<integer>13</integer>
+						<string>H</string>
 					</array>
 					<string>B</string>
-					<string>All</string>
+					<string>HL</string>
+					<string>Go to Anti-air.  Jump cancel on hit only</string>
+					<array>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>6B</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>6B</string>
 					<array>
-						<integer>3</integer>
+						<integer>24</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>4</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<array>
+						<false/>
+						<integer>19</integer>
+					</array>
+					<integer>16</integer>
+					<integer>-6</integer>
 					<array>
 						<integer>0</integer>
 					</array>
 					<string>B</string>
-					<string>All</string>
+					<string>H</string>
+					<string>Standing Overhead.  Cancels into unsafe moves</string>
+					<array>
+						<string>6A</string>
+						<string>5D</string>
+						<string>2D</string>
+						<string>6D</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>6C</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>6C</string>
+					<array>
+						<integer>20</integer>
+					</array>
 					<array>
 						<integer>3</integer>
+						<integer>8</integer>
+						<integer>2</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<false/>
+						<integer>33</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<integer>18</integer>
+					<integer>-16</integer>
 					<array>
 						<integer>0</integer>
 					</array>
-					<string>B</string>
-					<string>All</string>
+					<string>F</string>
+					<string>L</string>
+					<string>Crouching Confirm combo filler.  </string>
+					<array>
+						<string>6D</string>
+						<string>8</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 			</dict>
 			<key>Other</key>
 			<dict>
 				<key>3C</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>3C</string>
+					<array>
+						<integer>12</integer>
+					</array>
 					<array>
 						<integer>3</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<false/>
+						<integer>27</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<integer>18</integer>
+					<integer>-11</integer>
 					<array>
 						<integer>0</integer>
 					</array>
-					<string>B</string>
-					<string>All</string>
+					<string>F</string>
+					<string>L</string>
+					<string>Hard Knockdown on hit.  Jump cancellable</string>
+					<array>
+						<string>2D</string>
+						<string>8</string>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>5AB</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>Crush Trigger</string>
 					<array>
-						<integer>3</integer>
+						<integer>30</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<integer>1</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<array>
+						<false/>
+						<integer>23</integer>
+					</array>
+					<integer>24</integer>
+					<integer>2</integer>
 					<array>
 						<integer>0</integer>
 					</array>
 					<string>B</string>
 					<string>All</string>
+					<string>Actually +4 due to barrier guard</string>
+					<array>
+						<string>No</string>
+					</array>
+				</array>
+				<key>5BC</key>
+				<array>
+					<string>Throw</string>
+					<array>
+						<integer>7</integer>
+					</array>
+					<array>
+						<integer>3</integer>
+					</array>
+					<array>
+						<false/>
+						<integer>19</integer>
+					</array>
+					<integer>0</integer>
+					<integer>0</integer>
+					<array>
+						<integer>0</integer>
+					</array>
+					<string>T</string>
+					<string>Tech</string>
+					<string>Can be teched especially in blockstun</string>
+					<array>
+						<string>No</string>
+					</array>
 				</array>
 			</dict>
 			<key>Drive</key>
 			<dict>
 				<key>5D</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>5D</string>
 					<array>
+						<integer>15</integer>
+					</array>
+					<array>
+						<integer>5</integer>
+						<integer>12</integer>
 						<integer>3</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<false/>
+						<integer>29</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<integer>20</integer>
+					<integer>-11</integer>
 					<array>
 						<integer>0</integer>
 					</array>
 					<string>B</string>
-					<string>All</string>
+					<string>HL</string>
+					<string>Combo Filler.  Large pushback on block</string>
+					<array>
+						<string>214A</string>
+						<string>623C</string>
+						<string>623D</string>
+						<string>214B</string>
+						<string>236D</string>
+						<string>214D</string>
+						<string>632146D</string>
+						<string>632146D~D</string>
+						<string>214214D</string>
+						<string>2141236C</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 				<key>2D</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>2D</string>
 					<array>
-						<integer>3</integer>
+						<integer>18</integer>
 					</array>
+					<array>
+						<integer>2</integer>
+					</array>
+					<array>
+						<false/>
+						<integer>23</integer>
+					</array>
+					<integer>20</integer>
+					<integer>-4</integer>
 					<array>
 						<integer>0</integer>
-						<integer>9</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<string>F</string>
+					<string>L</string>
+					<string>Long reaching low.  Hard knockdown on hit</string>
 					<array>
-						<integer>0</integer>
+						<string>No</string>
 					</array>
-					<string>B</string>
-					<string>All</string>
 				</array>
 				<key>6D</key>
 				<array>
-					<string>5A</string>
-					<integer>5</integer>
+					<string>6D</string>
+					<array>
+						<integer>26</integer>
+					</array>
 					<array>
 						<integer>3</integer>
 					</array>
 					<array>
-						<integer>0</integer>
-						<integer>9</integer>
+						<false/>
+						<integer>14</integer>
+						<integer>16</integer>
 					</array>
-					<integer>11</integer>
-					<integer>0</integer>
+					<integer>20</integer>
+					<integer>-12</integer>
 					<array>
-						<integer>0</integer>
+						<integer>10</integer>
+						<integer>25</integer>
+						<string>F</string>
 					</array>
-					<string>B</string>
-					<string>All</string>
+					<string>H</string>
+					<string>HL</string>
+					<string>Low crush, cancels into j.D to be safe</string>
+					<array>
+						<string>j.D</string>
+						<string>214B</string>
+						<string>Overdrive</string>
+					</array>
 				</array>
 			</dict>
 		</dict>
@@ -331,316 +617,448 @@
 		<dict>
 			<key>j.A</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>j.A</string>
+				<array>
+					<integer>7</integer>
+				</array>
 				<array>
 					<integer>3</integer>
 				</array>
 				<array>
-					<integer>0</integer>
+					<false/>
 					<integer>9</integer>
 				</array>
 				<integer>11</integer>
-				<integer>0</integer>
+				<integer>-1</integer>
 				<array>
 					<integer>0</integer>
 				</array>
-				<string>B</string>
-				<string>All</string>
+				<string>H</string>
+				<string>H</string>
+				<string>Self Cancels.  Good air to air</string>
+				<array>
+					<string>j.A</string>
+					<string>j.B</string>
+					<string>j.C</string>
+					<string>j.D</string>
+					<string>5BC</string>
+					<string>8</string>
+					<string>Overdrive</string>
+				</array>
 			</array>
 			<key>j.B</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>j.B</string>
 				<array>
-					<integer>3</integer>
+					<integer>10</integer>
 				</array>
 				<array>
-					<integer>0</integer>
 					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<array>
+					<false/>
+					<integer>12</integer>
+				</array>
+				<integer>13</integer>
+				<integer>-7</integer>
 				<array>
 					<integer>0</integer>
 				</array>
-				<string>B</string>
-				<string>All</string>
+				<string>H</string>
+				<string>H</string>
+				<string>Strong for safe jumps</string>
+				<array>
+					<string>j.C</string>
+					<string>j.D</string>
+					<string>8</string>
+					<string>Overdrive</string>
+				</array>
 			</array>
 			<key>j.C</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>j.B</string>
 				<array>
-					<integer>3</integer>
+					<integer>12</integer>
 				</array>
+				<array>
+					<integer>4</integer>
+				</array>
+				<array>
+					<false/>
+					<integer>26</integer>
+				</array>
+				<integer>16</integer>
+				<integer>-13</integer>
 				<array>
 					<integer>0</integer>
-					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<string>H</string>
+				<string>H</string>
+				<string>Great ground to air</string>
 				<array>
-					<integer>0</integer>
+					<string>j.D</string>
+					<string>8</string>
+					<string>Overdrive</string>
 				</array>
-				<string>B</string>
-				<string>All</string>
 			</array>
 			<key>j.D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>j.D</string>
 				<array>
-					<integer>3</integer>
+					<integer>13</integer>
 				</array>
+				<array>
+					<integer>4</integer>
+				</array>
+				<array>
+					<false/>
+					<integer>20</integer>
+				</array>
+				<integer>16</integer>
+				<integer>-7</integer>
 				<array>
 					<integer>0</integer>
-					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<string>H</string>
+				<string>H</string>
+				<string>Bad P2, only use when needed to adjust position</string>
 				<array>
-					<integer>0</integer>
+					<string>8</string>
+					<string>Overdrive</string>
 				</array>
-				<string>B</string>
-				<string>All</string>
 			</array>
 		</dict>
 		<key>Special</key>
 		<dict>
 			<key>66</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Dash Cancel</string>
 				<array>
-					<integer>3</integer>
+					<integer>0</integer>
 				</array>
 				<array>
 					<integer>0</integer>
-					<integer>9</integer>
 				</array>
-				<integer>11</integer>
+				<array>
+					<true/>
+					<integer>22</integer>
+				</array>
+				<integer>0</integer>
 				<integer>0</integer>
 				<array>
 					<integer>0</integer>
 				</array>
-				<string>B</string>
-				<string>All</string>
+				<string>N/A</string>
+				<string>N/A</string>
+				<string>Certain moves can dash cancel.  OD 5D, 22C on hit, etc.</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>214A</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Hell&apos;s Fang</string>
 				<array>
-					<integer>3</integer>
+					<integer>15</integer>
 				</array>
 				<array>
-					<integer>0</integer>
-					<integer>9</integer>
+					<integer>1</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<array>
+					<false/>
+					<integer>28</integer>
+				</array>
+				<integer>24</integer>
+				<integer>-4</integer>
 				<array>
 					<integer>0</integer>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Active for 13 Frames, stops being active after connecting</string>
+				<array>
+					<string>[214A] 214D</string>
+				</array>
 			</array>
 			<key>[214A] 214D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>HF Follow Up</string>
+				<array>
+					<integer>23</integer>
+				</array>
 				<array>
 					<integer>3</integer>
 				</array>
 				<array>
-					<integer>0</integer>
-					<integer>9</integer>
+					<false/>
+					<integer>35</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<integer>18</integer>
+				<integer>-19</integer>
 				<array>
 					<integer>0</integer>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Only appears after 214A</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>623C</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>C Inferno Divider</string>
 				<array>
-					<integer>3</integer>
-				</array>
-				<array>
-					<integer>0</integer>
 					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
 				<array>
+					<integer>5</integer>
 					<integer>0</integer>
+					<string>8</string>
+				</array>
+				<array>
+					<false/>
+					<integer>20</integer>
+					<integer>19</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-28</integer>
+				<array>
+					<integer>1</integer>
+					<integer>17</integer>
+					<string>All</string>
 				</array>
 				<string>B</string>
-				<string>All</string>
+				<string>HL</string>
+				<string>Dragon Punch</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>623D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>D Inferno Divider</string>
 				<array>
-					<integer>3</integer>
+					<integer>7</integer>
 				</array>
 				<array>
+					<integer>5</integer>
 					<integer>0</integer>
-					<integer>9</integer>
+					<integer>8</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<array>
+					<false/>
+					<integer>20</integer>
+					<integer>19</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-37</integer>
 				<array>
 					<integer>0</integer>
 				</array>
 				<string>B</string>
-				<string>All</string>
+				<string>HL</string>
+				<string>No Invuln, Fatal Counter</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>214B</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Gauntlet Hades</string>
 				<array>
-					<integer>3</integer>
+					<integer>20</integer>
 				</array>
+				<array>
+					<integer>7</integer>
+				</array>
+				<array>
+					<false/>
+					<integer>14</integer>
+					<integer>13</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-11</integer>
 				<array>
 					<integer>0</integer>
-					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<string>H</string>
+				<string>H</string>
+				<string>Hits crouchers not on the 21st frame</string>
 				<array>
-					<integer>0</integer>
+					<string>N/A</string>
 				</array>
-				<string>B</string>
-				<string>All</string>
 			</array>
 			<key>236D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Dead Spike</string>
 				<array>
-					<integer>3</integer>
+					<integer>26</integer>
 				</array>
+				<array>
+					<integer>13</integer>
+				</array>
+				<array>
+					<true/>
+					<integer>57</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-1</integer>
 				<array>
 					<integer>0</integer>
-					<integer>9</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
-				<array>
-					<integer>0</integer>
-				</array>
-				<string>B</string>
+				<string>HBFP</string>
 				<string>All</string>
+				<string>Dash Cancels.  Not great on block to do though</string>
+				<array>
+					<string>66</string>
+				</array>
 			</array>
 			<key>214D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Blood Scythe</string>
+				<array>
+					<integer>37</integer>
+				</array>
 				<array>
 					<integer>3</integer>
 				</array>
 				<array>
-					<integer>0</integer>
-					<integer>9</integer>
+					<false/>
+					<integer>7</integer>
+					<integer>6</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<integer>20</integer>
+				<integer>5</integer>
 				<array>
 					<integer>0</integer>
 				</array>
-				<string>B</string>
+				<string>H</string>
 				<string>All</string>
+				<string>Can get Airthrown out of.  Fatal counter</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 		</dict>
 		<key>Super</key>
 		<dict>
 			<key>632146D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Carnage Scissors</string>
 				<array>
-					<integer>3</integer>
-				</array>
-				<array>
-					<integer>0</integer>
 					<integer>9</integer>
+					<integer>7</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
 				<array>
-					<integer>0</integer>
+					<integer>2</integer>
+					<integer>38</integer>
+					<integer>4</integer>
+				</array>
+				<array>
+					<false/>
+					<integer>58</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-43</integer>
+				<array>
+					<integer>1</integer>
+					<integer>14</integer>
+					<string>All</string>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Startup varies from +7-12 due to distance</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>632146D~D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Carnage Scissors (feint)</string>
 				<array>
-					<integer>3</integer>
-				</array>
-				<array>
-					<integer>0</integer>
 					<integer>9</integer>
+					<integer>7</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
 				<array>
-					<integer>0</integer>
+					<integer>2</integer>
+				</array>
+				<array>
+					<false/>
+					<integer>37</integer>
+				</array>
+				<integer>18</integer>
+				<integer>-20</integer>
+				<array>
+					<integer>1</integer>
+					<integer>14</integer>
+					<string>All</string>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Hold D button to cause feint on second hit</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 			<key>214214D</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Devoured By Darkness</string>
+				<array>
+					<integer>13</integer>
+					<integer>12</integer>
+				</array>
 				<array>
 					<integer>3</integer>
 				</array>
 				<array>
-					<integer>0</integer>
-					<integer>9</integer>
+					<false/>
+					<integer>56</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
+				<integer>18</integer>
+				<integer>-40</integer>
 				<array>
-					<integer>0</integer>
+					<integer>1</integer>
+					<integer>16</integer>
+					<string>All</string>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Bad Reversal.  Unblockable in OD</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 		</dict>
 		<key>Astral</key>
 		<dict>
 			<key>2141236C</key>
 			<array>
-				<string>5A</string>
-				<integer>5</integer>
+				<string>Black Onslaught</string>
 				<array>
 					<integer>3</integer>
+					<integer>25</integer>
 				</array>
 				<array>
-					<integer>0</integer>
-					<integer>9</integer>
+					<integer>2</integer>
 				</array>
-				<integer>11</integer>
-				<integer>0</integer>
 				<array>
-					<integer>0</integer>
+					<false/>
+					<integer>25</integer>
+				</array>
+				<integer>20</integer>
+				<integer>-12</integer>
+				<array>
+					<integer>1</integer>
+					<integer>16</integer>
+					<string>All</string>
 				</array>
 				<string>B</string>
 				<string>All</string>
+				<string>Might have more blockstun than reported</string>
+				<array>
+					<string>N/A</string>
+				</array>
 			</array>
 		</dict>
 	</dict>

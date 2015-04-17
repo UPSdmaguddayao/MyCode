@@ -26,18 +26,16 @@
 - (void)setCharacterName:(NSString *)characterName
 {
     character = characterName;
-    NSLog(@"Setting the character as %@",character);
+    //NSLog(@"Setting the character as %@",character);
 }
 
 - (void)setMoveList:(NSDictionary *)moveList
 {
     moves = moveList;
-    NSLog(@"Setting move list");
+    //NSLog(@"Setting move list");
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //NSLog(@"Test, using Ragna Data");
-    //character name and movelist should be set.  Now try getting move data.
     NSDictionary *ground =[moves objectForKey:@"Ground"];
     NSDictionary *air = [moves objectForKey:@"Air"];
     NSDictionary *spec = [moves objectForKey:@"Special"];
@@ -145,15 +143,59 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-  //  FrameDataInstance *fd = [_characterFrameData objectAtIndex:indexPath.row];
-    NSString *move =[_moveNotation objectAtIndex:indexPath.row];
+    //  FrameDataInstance *fd = [_characterFrameData objectAtIndex:indexPath.row];
+    NSMutableString *move =[NSMutableString stringWithFormat:@"%@",[_moveNotation objectAtIndex:indexPath.row]] ;
+    NSString *fakemove = [_moveNotation objectAtIndex:indexPath.row];
+    //[[fakemove replaceOccurrencesOfString:@"[" withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
+    fakemove= [fakemove stringByReplacingOccurrencesOfString:@"[" withString:@""];
+    //[fakemove replaceOccurrencesOfString:@"]" withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
+    fakemove= [fakemove stringByReplacingOccurrencesOfString:@"]" withString:@""];
+    //[fakemove replaceOccurrencesOfString:@"." withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
+    fakemove= [fakemove stringByReplacingOccurrencesOfString:@"." withString:@""];
+    NSString *f = [NSString stringWithFormat: @"Fake move length of %@ is %lu", move, (unsigned long)move.length];
+    NSLog(f);
+    int removedChara = (int)move.length - (int)fakemove.length;
+    int moveStringL = (14-(int)fakemove.length)*2+removedChara;
+    for(int i = 0; i < moveStringL;)
+    {
+        [move appendString:@" "];
+        i++;
+    }
+    /*while (move.length < 14)
+     {
+     [move appendString:@" "];
+     }*/
     NSArray *moveD = [_moveData objectAtIndex:indexPath.row];
-
-    NSString *string = [NSString stringWithFormat:@"%@ \t\t\t %@ \t\t\t %@", move,[moveD objectAtIndex:1],[moveD objectAtIndex:5]];
-    cell.textLabel.text = string;
     
+    //format the String Array from Startup in [moveD objectAtIndex:1]
+    NSMutableString *blah;
+    
+    NSArray *startup = [moveD objectAtIndex:1];
+    if (startup.count <2)
+    {
+        blah = [NSMutableString stringWithFormat:@"%@",[startup objectAtIndex:0]];
+        while (blah.length < 10)
+        {
+            [blah appendString:@"  "];
+        }
+    }
+    else
+    {
+        blah = [NSMutableString stringWithFormat:@"%@+%@",[startup objectAtIndex:0],[startup objectAtIndex:1]];
+        while (blah.length < 10)
+        {
+            [blah appendString:@"  "];
+        }
+    }
+    
+    //format the String of Frame Advantage
+    
+    NSString *string = [NSString stringWithFormat:@"%@  %@          %@", move,blah,[moveD objectAtIndex:5]];
+    cell.textLabel.text = string;
+    //   NSString *lol = [NSString stringWithFormat: @"%lu", (unsigned long)move.length];
+    //  NSLog(lol);
     return cell;
-
+    
 }
 
 
