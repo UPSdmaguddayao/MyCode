@@ -1,25 +1,24 @@
 //
-//  RevolverActionTableViewController.m
+//  MoveDataTableViewController.m
 //  Air Dash Helper
 //
-//  Created by DJ Maguddayao on 2/5/15.
+//  Created by DJ Maguddayao on 4/26/15.
 //  Copyright (c) 2015 DJ Maguddayao. All rights reserved.
 //
 
-#import "RevolverActionTableViewController.h"
+#import "MoveDataTableViewController.h"
 
-@interface RevolverActionTableViewController ()
+@interface MoveDataTableViewController ()
 
 @end
 
-@implementation RevolverActionTableViewController
+@implementation MoveDataTableViewController
 
-- (void)setCharacterName:(NSString *)characterName
+- (void)setframeData:(NSArray *)frameData
 {
-    _character = characterName;
-    NSLog(@"Setting the character as %@",_character);
+    //character = characterName;
+    //NSLog(@"Setting the character as %@",character);
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -93,15 +92,14 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
-//In a storyboard-based application, you will often want to do a little preparation before navigation
+// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    return;
 }
-
+*/
 
 @end

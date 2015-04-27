@@ -8,7 +8,7 @@
 
 #import "MoveListTableViewController.h"
 #import "CharacterTableViewController.h"
-#import "RevolverActionTableViewController.h"
+#import "MoveDataTableViewController.h"
 #import "ControlVariables.h"
 #import "FrameDataInstance.h"
 
@@ -69,6 +69,15 @@
         NSString *notation =[forward objectAtIndex:i];
         [_moveNotation addObject:notation];
         [_moveData addObject:[[ground objectForKey:@"6"] objectForKey:notation]];
+        i +=1;
+    }
+    
+    NSArray *drive = [[[ground objectForKey:@"Drive"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i< drive.count;)
+    {
+        NSString *notation =[drive objectAtIndex:i];
+        [_moveNotation addObject:notation];
+        [_moveData addObject:[[ground objectForKey:@"Drive"] objectForKey:notation]];
         i +=1;
     }
     NSArray *other = [[[ground objectForKey:@"Other"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
@@ -152,13 +161,14 @@
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"]" withString:@""];
     //[fakemove replaceOccurrencesOfString:@"." withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"." withString:@""];
-    NSString *f = [NSString stringWithFormat: @"Fake move length of %@ is %lu", move, (unsigned long)move.length];
-    NSLog(f);
+    fakemove= [fakemove stringByReplacingOccurrencesOfString:@"j" withString:@"J"];
+    //NSString *f = [NSString stringWithFormat: @"Fake move length of %@ is %lu", move, (unsigned long)move.length];
     int removedChara = (int)move.length - (int)fakemove.length;
     int moveStringL = (14-(int)fakemove.length)*2+removedChara;
     for(int i = 0; i < moveStringL;)
     {
         [move appendString:@" "];
+    //    [realmove appendString:@" "];
         i++;
     }
     /*while (move.length < 14)
@@ -192,8 +202,6 @@
     
     NSString *string = [NSString stringWithFormat:@"%@  %@          %@", move,blah,[moveD objectAtIndex:5]];
     cell.textLabel.text = string;
-    //   NSString *lol = [NSString stringWithFormat: @"%lu", (unsigned long)move.length];
-    //  NSLog(lol);
     return cell;
     
 }
@@ -205,17 +213,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"Time to go to Revolver Action");
+    NSLog(@"Time to go to move data");
     //NSString *character = send.textLabel.text;
-    if([[segue identifier] isEqualToString:@"RevolverAction"])
+    if([[segue identifier] isEqualToString:@"moveDataTable"])
     {
         NSLog(@"The sender is %@",self.character);
         // Get the new view controller using [segue destinationViewController]
         
         //MoveListTableViewController *mlt = [segue destinationViewController];
         UINavigationController *nc = [segue destinationViewController];
-        RevolverActionTableViewController *ra = (RevolverActionTableViewController*)([nc viewControllers][0]);
-        [ra setCharacterName:self.character];
+        MoveDataTableViewController *md = (MoveDataTableViewController*)([nc viewControllers][0]);
+        //[md setFrameData:self.character];
         // Pass the selected object to the new view controller.
     }
     else
