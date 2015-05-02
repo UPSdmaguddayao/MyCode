@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Air Dash Helper/MoveListTableViewController.m"
-            timestampString = "452265262.618356"
+            timestampString = "452275383.325924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Air Dash Helper/MoveDataTableViewController.m"
-            timestampString = "452218692.44446"
+            timestampString = "452275383.325924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "-setFrameData:"
             landmarkType = "5">
          </BreakpointContent>

@@ -72,11 +72,19 @@
             BOOL *check = [[recovery objectAtIndex:0] boolValue];
             if (check) //if check is true, then we add a T.  Else false
             {
+                
                 sValue = [NSString stringWithFormat:@"Recovery: %@ T",[recovery objectAtIndex:1]] ;
             }
             else
             {
-                sValue = [NSString stringWithFormat:@"Recovery: %@",[recovery objectAtIndex:1]] ;
+                if (recovery.count <3)
+                {
+                   sValue = [NSString stringWithFormat:@"Recovery: %@",[recovery objectAtIndex:1]] ;
+                }
+                else
+                {
+                    sValue = [NSString stringWithFormat:@"Recovery: %@ + %@ L",[recovery objectAtIndex:1],[recovery objectAtIndex:2]] ;
+                }
             }
             recovery = nil;
         }

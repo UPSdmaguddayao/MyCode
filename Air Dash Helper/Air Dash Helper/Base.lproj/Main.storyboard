@@ -386,7 +386,7 @@
                         <sections>
                             <tableViewSection id="pZg-96-P94">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="upi-r6-PR7" style="IBUITableViewCellStyleDefault" id="YX2-4M-JHl">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BSCreator" textLabel="upi-r6-PR7" style="IBUITableViewCellStyleDefault" id="YX2-4M-JHl">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YX2-4M-JHl" id="ju4-Ui-StD">
                                             <autoresizingMask key="autoresizingMask"/>
