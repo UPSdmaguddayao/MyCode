@@ -82,7 +82,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"Time to go");
     UITableViewCell *send = (UITableViewCell*)sender; //need to set it like this in order to send the string correctly
-    //NSString *character = send.textLabel.text;
+    
     self.characterName = [[NSString alloc] init];
     self.characterName = send.textLabel.text;
     if([[segue identifier] isEqualToString:@"frameDataTable"])

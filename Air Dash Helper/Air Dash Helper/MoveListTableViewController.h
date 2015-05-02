@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSDictionary* moves;
 @property NSMutableArray* moveNotation;
 @property NSMutableArray* moveData;
+@property NSArray* sendMove;
 
 #warning For now, just use a bunch of if statements and use every character list there is.  Work on optimizing this option later
 

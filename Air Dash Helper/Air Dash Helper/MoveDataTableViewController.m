@@ -14,19 +14,122 @@
 
 @implementation MoveDataTableViewController
 
-- (void)setframeData:(NSArray *)frameData
+- (void)setFrameData:(NSArray *)frameData
 {
-    //character = characterName;
-    //NSLog(@"Setting the character as %@",character);
+    _fData = frameData;
+    //Adjust the data to be displayed
+    //go through the frameData loop
+    _displayData = [[NSMutableArray alloc] init];
+    NSArray *revo = [_fData objectAtIndex:10];
+    NSString *sValue = [[NSString alloc] init];
+    for (int i = 0; i< _fData .count - 1 + revo.count;)
+    {
+        NSLog(@"Did this: %d",i);
+        if (i == 0)
+        {
+            //NSString *notation =[frameData objectAtIndex:i];
+            sValue = [NSString stringWithFormat:@"Move Name: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i == 1)
+        {
+            NSArray *startup = [[NSArray alloc] init];
+            startup = [_fData  objectAtIndex:i];
+            if (startup.count < 2)
+            {
+                sValue = [NSString stringWithFormat:@"Startup: %@",[startup objectAtIndex:0]] ;
+            }
+            else
+            {
+                sValue = [NSString stringWithFormat:@"Startup: %@+%@",[startup objectAtIndex:0],[startup objectAtIndex:1]] ;
+            }
+            startup = nil;
+        }
+        else if (i ==2)
+        {
+            NSArray *active = [[NSArray alloc] init];
+            active = [_fData  objectAtIndex:i];
+            NSMutableString *temp = [NSMutableString stringWithFormat:@""];
+            for (int x = 0; x < active.count;)
+            {
+                if(x%2 == 0)
+                {
+                    [temp appendFormat:@"%@ ",[active objectAtIndex:x]];
+                }
+                else
+                {
+                    [temp appendFormat:@"(%@) ",[active objectAtIndex:x]];
+                }
+                x += 1;
+            }
+            sValue = [NSString stringWithFormat:@"Active: %@",temp] ;
+            active = nil;
+            temp = nil;
+        }
+        else if (i == 3)
+        {
+            NSArray *recovery = [[NSArray alloc] init];
+            recovery = [_fData  objectAtIndex:i];
+            BOOL *check = [[recovery objectAtIndex:0] boolValue];
+            if (check) //if check is true, then we add a T.  Else false
+            {
+                sValue = [NSString stringWithFormat:@"Recovery: %@ T",[recovery objectAtIndex:1]] ;
+            }
+            else
+            {
+                sValue = [NSString stringWithFormat:@"Recovery: %@",[recovery objectAtIndex:1]] ;
+            }
+            recovery = nil;
+        }
+        else if (i == 4)
+        {
+            sValue = [NSString stringWithFormat:@"Blockstun: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i ==5)
+        {
+            sValue = [NSString stringWithFormat:@"Frame Advantage: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i == 6)
+        {
+            NSArray *invuln = [[NSArray alloc] init];
+            invuln = [_fData  objectAtIndex:i];
+            if(invuln.count < 2)
+            {
+                sValue = [NSString stringWithFormat:@"Invuln: None"] ;
+            }
+            else
+            {
+                sValue = [NSString stringWithFormat:@"Invuln: %@ - %@ %@",[invuln objectAtIndex:0],[invuln objectAtIndex:1],[invuln objectAtIndex:2]] ;
+            }
+            invuln = nil;
+        }
+        else if (i == 7)
+        {
+            sValue = [NSString stringWithFormat:@"Attribute: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i ==8)
+        {
+            sValue = [NSString stringWithFormat:@"Block: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i == 9)
+        {
+            sValue = [NSString stringWithFormat:@"Note: %@",[_fData  objectAtIndex:i]] ;
+        }
+        else if (i == 10)
+        {
+            sValue = [NSString stringWithFormat:@"Revolver Action: %@",[revo objectAtIndex:(i-10)]] ;
+        }
+        else
+        {
+            sValue = [NSString stringWithFormat:@"%@",[revo objectAtIndex:(i-10)]] ;
+        }
+        [_displayData addObject:sValue];
+        i +=1;
+    }
+
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,26 +140,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return _displayData.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mDataCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    NSString *txt =[_displayData objectAtIndex:indexPath.row];
+    NSLog(txt);
+    cell.textLabel.text = txt;
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

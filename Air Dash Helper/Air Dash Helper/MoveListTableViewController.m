@@ -145,6 +145,10 @@
     return _moveNotation.count; //prototype stuff for testing.  We'll make it from what the array soon
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [NSString stringWithFormat:@"Move Notation      Startup         Frame Advantage"];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -214,16 +218,23 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     NSLog(@"Time to go to move data");
-    //NSString *character = send.textLabel.text;
+    UITableViewCell *send = (UITableViewCell*)sender; //need to set it like this in order to send the string correctly
     if([[segue identifier] isEqualToString:@"moveDataTable"])
     {
-        NSLog(@"The sender is %@",self.character);
-        // Get the new view controller using [segue destinationViewController]
+        NSString *notation = [[NSString alloc] init];
+        notation = send.textLabel.text;
+        notation = [notation substringWithRange:NSMakeRange(0, 14)];
+        notation= [notation stringByReplacingOccurrencesOfString:@" " withString:@""];
         
+        NSLog(@"The move name is %@",notation);
+        
+        //NSInteger *temp= [_moveNotation indexOfObject:notation];
+        NSArray *moveData = [_moveData objectAtIndex:[_moveNotation indexOfObject:notation]];
+        // Get the new view controller using [segue destinationViewController]
         //MoveListTableViewController *mlt = [segue destinationViewController];
         UINavigationController *nc = [segue destinationViewController];
         MoveDataTableViewController *md = (MoveDataTableViewController*)([nc viewControllers][0]);
-        //[md setFrameData:self.character];
+        [md setFrameData:moveData];
         // Pass the selected object to the new view controller.
     }
     else

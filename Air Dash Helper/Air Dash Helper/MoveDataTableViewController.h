@@ -10,5 +10,8 @@
 
 @interface MoveDataTableViewController : UITableViewController
 
--(void)setCharacterName:(NSString *)characterName;
+@property NSMutableArray* displayData;
+@property NSArray* fData;
+
+-(void)setFrameData:(NSArray *)frameData;
 @end

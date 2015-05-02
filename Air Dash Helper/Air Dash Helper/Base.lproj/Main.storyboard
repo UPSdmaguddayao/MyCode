@@ -96,13 +96,13 @@
         <!--Move Data-->
         <scene sceneID="rZh-5W-m6e">
             <objects>
-                <tableViewController id="iZn-qx-LLQ" customClass="MoveListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="iZn-qx-LLQ" customClass="MoveDataTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mKk-X1-nSm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KWN-Ku-tDc">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mDataCell" id="KWN-Ku-tDc">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWN-Ku-tDc" id="Fdw-9J-tQC">
                                     <autoresizingMask key="autoresizingMask"/>
