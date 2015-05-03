@@ -36,7 +36,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDictionary *ground =[moves objectForKey:@"Ground"];
+    NSDictionary *ground =[moves objectForKey:@"Ground"];  //grabs the seperate dictionaries of one character's moves in the pList
     NSDictionary *air = [moves objectForKey:@"Air"];
     NSDictionary *spec = [moves objectForKey:@"Special"];
     NSDictionary *sup = [moves objectForKey:@"Super"];
@@ -46,25 +46,25 @@
     //run this in a loop to create two arrays.  First one is a list of moves.  Second one is move data
     NSArray *stand= [[[ground objectForKey:@"5"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
-    for (int i = 0; i< stand.count;)
+    for (int i = 0; i< stand.count;) //grabs from standing neutral ground moves
     {
         NSString *notation =[stand objectAtIndex:i];
         [_moveNotation addObject:notation];
         [_moveData addObject:[[ground objectForKey:@"5"] objectForKey:notation]];
         i +=1;
     }
-    NSLog(@"%lu",(unsigned long)_moveNotation.count);
+   // NSLog(@"%lu",(unsigned long)_moveNotation.count);
     NSArray *crouch = [[[ground objectForKey:@"2"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< crouch.count;)
+    for (int i = 0; i< crouch.count;) //crouching ground moves
     {
         NSString *notation =[crouch objectAtIndex:i];
         [_moveNotation addObject:notation];
         [_moveData addObject:[[ground objectForKey:@"2"] objectForKey:notation]];
         i +=1;
     }
-    NSLog(@"%lu",(unsigned long)_moveNotation.count);
+   // NSLog(@"%lu",(unsigned long)_moveNotation.count);
     NSArray *forward = [[[ground objectForKey:@"6"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< forward.count;)
+    for (int i = 0; i< forward.count;) //standing tilt moves
     {
         NSString *notation =[forward objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -73,7 +73,7 @@
     }
     
     NSArray *drive = [[[ground objectForKey:@"Drive"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< drive.count;)
+    for (int i = 0; i< drive.count;) //drive moves (normals using the D button except j.D)
     {
         NSString *notation =[drive objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -81,7 +81,7 @@
         i +=1;
     }
     NSArray *other = [[[ground objectForKey:@"Other"] allKeys]sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< other.count;)
+    for (int i = 0; i< other.count;) //special "command" normals such as 3C and jump cancels
     {
         NSString *notation =[other objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -89,7 +89,7 @@
         i +=1;
     }
     NSArray *aerial = [[air allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< aerial.count;)
+    for (int i = 0; i< aerial.count;) //aerial moves.  Certain characters have j.2C along with a j.C
     {
         NSString *notation =[aerial objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -97,7 +97,7 @@
         i +=1;
     }
     NSArray *specials =[[spec allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< specials.count;)
+    for (int i = 0; i< specials.count;) //special moves
     {
         NSString *notation =[specials objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -105,7 +105,7 @@
         i +=1;
     }
     NSArray *supers =[[sup allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< supers.count;)
+    for (int i = 0; i< supers.count;) //super moves
     {
         NSString *notation =[supers objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -113,7 +113,7 @@
         i +=1;
     }
     NSArray *astral = [[ast allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-    for (int i = 0; i< astral.count;)
+    for (int i = 0; i< astral.count;) //instant kill moves
     {
         NSString *notation =[astral objectAtIndex:i];
         [_moveNotation addObject:notation];
@@ -129,8 +129,7 @@
 
 - (IBAction)unwindToMoveList:(UIStoryboardSegue *)segue
 {
-    [self viewDidLoad];
-
+    [self viewDidLoad]; //reload the lists
 }
 
 #pragma mark - Table view data source
@@ -212,6 +211,7 @@
     
     NSString *string = [NSString stringWithFormat:@"%@  %@          %@", move,blah,[moveD objectAtIndex:5]];
     cell.textLabel.text = string;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
     
 }
@@ -223,10 +223,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"Time to go to move data");
-    UITableViewCell *send = (UITableViewCell*)sender; //need to set it like this in order to send the string correctly
+       UITableViewCell *send = (UITableViewCell*)sender; //need to set it like this in order to send the string correctly
     if([[segue identifier] isEqualToString:@"moveDataTable"])
     {
+        NSLog(@"Time to go to move data");
         NSString *notation = [[NSString alloc] init];
         notation = send.textLabel.text;
         notation = [notation substringWithRange:NSMakeRange(0, 14)];
@@ -246,6 +246,8 @@
     else
     {
         NSLog(@"Going back to CharacterTable");
+        _moveData = nil;
+        _moveNotation = nil;
         return;
     }
 

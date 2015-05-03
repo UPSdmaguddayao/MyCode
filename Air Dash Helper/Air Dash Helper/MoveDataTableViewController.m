@@ -153,7 +153,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return _displayData.count;
 }
@@ -165,7 +164,7 @@
     
     // Configure the cell...
     NSString *txt =[_displayData objectAtIndex:indexPath.row];
-    NSLog(txt);
+    //NSLog(txt);
     cell.textLabel.text = txt;
     return cell;
 }
