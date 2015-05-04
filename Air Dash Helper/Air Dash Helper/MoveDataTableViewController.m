@@ -166,6 +166,14 @@
     NSString *txt =[_displayData objectAtIndex:indexPath.row];
     //NSLog(txt);
     cell.textLabel.text = txt;
+    if (indexPath.row == 9) //notes section is usually the longest
+    {
+        cell.textLabel.font = [UIFont systemFontOfSize:12.0];
+    }
+    else
+    {
+    cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+    }
     return cell;
 }
 

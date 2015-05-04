@@ -144,9 +144,23 @@
     return _moveNotation.count; //prototype stuff for testing.  We'll make it from what the array soon
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section { //helps create a custom header view.  Helps to change the size
+    
+    UILabel *myLabel = [[UILabel alloc] init];
+    myLabel.frame = CGRectMake(0, 0, 1000, 20);
+    myLabel.backgroundColor = [UIColor grayColor]; //this color background should match the view background eventually, so we don't need to make the rectange too big
+    myLabel.font = [UIFont boldSystemFontOfSize:12];
+    myLabel.text = [self tableView:tableView titleForHeaderInSection:section]; //grabs text items from method below this one
+    
+    UIView *headerView = [[UIView alloc] init];
+    [headerView addSubview:myLabel];
+    
+    return headerView;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section //we only have one section, so we just need to return a simple text
 {
-    return [NSString stringWithFormat:@"Move Notation      Startup         Adv Block"];
+    return [NSString stringWithFormat:@"    Move Notation      Startup         Adv Block"];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -161,17 +175,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    //  FrameDataInstance *fd = [_characterFrameData objectAtIndex:indexPath.row];
     NSMutableString *move =[NSMutableString stringWithFormat:@"%@",[_moveNotation objectAtIndex:indexPath.row]] ;
     NSString *fakemove = [_moveNotation objectAtIndex:indexPath.row];
-    //[[fakemove replaceOccurrencesOfString:@"[" withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"[" withString:@""];
-    //[fakemove replaceOccurrencesOfString:@"]" withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"]" withString:@""];
-    //[fakemove replaceOccurrencesOfString:@"." withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, [fakemove length])];
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"." withString:@""];
     fakemove= [fakemove stringByReplacingOccurrencesOfString:@"j" withString:@"J"];
-    //NSString *f = [NSString stringWithFormat: @"Fake move length of %@ is %lu", move, (unsigned long)move.length];
     int removedChara = (int)move.length - (int)fakemove.length;
     int moveStringL = (14-(int)fakemove.length)*2+removedChara;
     for(int i = 0; i < moveStringL;)
@@ -212,6 +221,7 @@
     NSString *string = [NSString stringWithFormat:@"%@  %@          %@", move,blah,[moveD objectAtIndex:5]];
     cell.textLabel.text = string;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.textLabel.font = [UIFont systemFontOfSize:12.0]; //resizes the text font
     return cell;
     
 }
