@@ -168,7 +168,7 @@
     cell.textLabel.text = txt;
     if (indexPath.row == 9) //notes section is usually the longest
     {
-        cell.textLabel.font = [UIFont systemFontOfSize:12.0];
+        cell.textLabel.font = [UIFont systemFontOfSize:10.0];
     }
     else
     {

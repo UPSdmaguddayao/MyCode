@@ -36,6 +36,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+#warning Restructure the plist to have an array holding the names of moves
     NSDictionary *ground =[moves objectForKey:@"Ground"];  //grabs the seperate dictionaries of one character's moves in the pList
     NSDictionary *air = [moves objectForKey:@"Air"];
     NSDictionary *spec = [moves objectForKey:@"Special"];
@@ -244,10 +245,8 @@
         
         NSLog(@"The move name is %@",notation);
         
-        //NSInteger *temp= [_moveNotation indexOfObject:notation];
         NSArray *moveData = [_moveData objectAtIndex:[_moveNotation indexOfObject:notation]];
         // Get the new view controller using [segue destinationViewController]
-        //MoveListTableViewController *mlt = [segue destinationViewController];
         UINavigationController *nc = [segue destinationViewController];
         MoveDataTableViewController *md = (MoveDataTableViewController*)([nc viewControllers][0]);
         [md setFrameData:moveData];
